@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html>
+
+
+	<head> <!-- Information de configuration : encodage, langue.. -->
+		<meta charset ="utf-8"/>
+		<title> HTML DOM </title>
+		<link rel="stylesheet" type="text/css" href="../CSS/HTML_DOM.css">
+		<link rel="shortcut icon" type="image/x-icon" href="../Contenu/Images/fleche.png">
+		<lang="fr"/>
+	</head>
+
+	<body>
+		<header> <!-- Identité : logo, bannière -->
+		</header>
+		<main>
+			<script>
+					var myMain = document.getElementsByTagName("main")[0];
+
+					var myDIV = document.createElement("div");
+					myDIV.setAttribute("id","conteneur");
+					var node = document.createTextNode("Sélectionnez le nombre de cases du damier");
+					myDIV.appendChild(node);
+					myMain.appendChild(myDIV);
+
+					var userInput = document.createElement("input");
+					userInput.setAttribute("id","userInput");
+					userInput.setAttribute("type","number");
+					userInput.setAttribute("min","0");
+					userInput.setAttribute("placeholder","0");
+					userInput.addEventListener("change",createDamier);
+					myDIV.appendChild(userInput);
+		
+
+					function createDamier()
+					{
+
+						var dimension = userInput.value;
+						//colonnes et lignes seront incrémentés pour permettre la génération du tableau (et éventuellement sortir de la boucle)
+						colonnes = 0;
+						lignes = 0;
+						if (document.getElementById("myDIV2"))
+						{
+							var myDIV2 = document.getElementById("myDIV2");
+							myMain.removeChild(myDIV2);
+						}
+						var myDIV2 = document.createElement("div");
+						myDIV2.setAttribute("id","myDIV2");
+						myMain.appendChild(myDIV2);
+						var myTab = document.createElement("table");
+						myTab.setAttribute("id","table_deux");
+						myDIV2.appendChild(myTab);
+						for (colonnes = 0; colonnes<dimension; colonnes++) //on créer les colonnes 
+						{
+							var myTR = document.createElement("tr");
+							myTab.appendChild(myTR);
+							for(lignes = 0;lignes<dimension;lignes++) //et on vérifie si la cellule est pair ou impaire
+							{
+								if (((lignes+colonnes)%2 == 0))
+								{
+									myTD = document.createElement("td");
+									myTD.setAttribute("id","bloc_trois_un");
+									myTR.appendChild(myTD);
+								}
+								else
+								{
+									myTD = document.createElement("td");
+									myTD.setAttribute("id","bloc_trois_deux");
+									myTR.appendChild(myTD);
+								}
+								
+							}
+						}
+					}
+			</script>
+	</main>
+
+		<footer> <!-- Informations de contact : réseaux sociaux, e-mail..-->
+			<p> Kevin LI <br/>
+				0676330170 <br/>
+				<a href="mailto: li.kevin67@outlook.com"> Cliquez ici pour m'envoyer un e-mail </a>
+		</footer>
+	</body>
+
+
+</html>
