@@ -1,87 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>QUACH Stéphanie - Psychologue et Neuropsychologue</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="global-container">
+        <header>
+            <div>
+                <div>
+                    <a href="#">
+                        <img src="assets/logo.png" alt="Logo" id="logo">
+                        <div>
+                            <h2>Stéphanie QUACH</h2>
+                            <h3>Psychologue - Neuropsychologue</h3>
+                        </div>
+                    </a>
+                </div>
 
-<html>
+                <nav>
+                    <ul>
+                        <li> <a href="#"> Accueil </a> </li>
+                        <div class="dropdown">
+                        <li> <a href="#" class="dropdownbtn"> Présentation </a>  </li>
+                            <div class="dropdown-content ml-1">
+                                <a href="#"> Qui suis-je ? </a>
+                                <a href="#"> Mes experiences </a>
+                            </div>
+                        </div>
+                        <li> <a href="#"> Consultations </a>  </li>
+                        <li> <a href="#"> Evalutions </a>  </li>
+                        <li> <a href="#"> Remediation Cognitive </a>  </li>
+                        <li> <a href="#"> Soins </a>  </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
+        <div class="text-left">
+            <div>
+                <h1 class="text-title">L'Origine</h1>
+                <section> L'école est un lieu privilégié dans le développement et l'épanouissement personnel et social
+                    de l'enfant. Or, la majorité des consultations en psychologie infantile sont liées à des difficultés
+                    scolaires, source de souffrance pour l'enfant et sa famille. Pour les aider efficacement, il est
+                    essentiel de bien comprendre l'origine de leurs difficultés afin de leur proposer une prise en charge
+                    adaptée et personnalisée. Le repérage et le dépistage des troubles manifestés par ces enfants sont
+                    significativement déterminants et essentiels pour leur évolution et leur avenir.
+                </section>
+            </div>
+             <img src="assets/picto.png" alt="Pictogramme école">
+        </div>
 
-	<head> <!-- Information de configuration : encodage, langue.. -->
-		<meta charset ="utf-8"/>
-		<title> HTML DOM </title>
-		<link rel="stylesheet" type="text/css" href="index.css">
-		<link rel="shortcut icon" type="image/x-icon" href="../Contenu/Images/fleche.png">
-		<lang="fr"/>
-	</head>
+        <hr>
 
-	<body>
-		<header> <!-- Identité : logo, bannière -->
-		</header>
-		<main>
-			<script>
-					var myMain = document.getElementsByTagName("main")[0];
+        <div class="mt-2 container-contact">
+            <iframe class="mb-1"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4437.259154284755!2d7.7811584744273095!3
+                    d48.601993237602414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c893e2666db9%3A0x370e32
+                    504a9a81b9!2s95%20Rue%20Boecklin%2C%2067000%20Strasbourg!5e0!3m2!1sfr!2sfr!4v1593246567105!5m2!1sfr
+                    !2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0">
+            </iframe>
+            <section class="contact mr-5">
+                Sensible aux enjeux des difficultés scolaires, j'ai choisi de travailler en libéral afin de me consacrer
+                pleinement à la prise en charge des enfants souffrant de troubles perturbant leur développement et/ou
+                leurs apprentissages.
+                <br> <br>
+                Je vous accueille dans mon cabinet situé au <br>
+                <strong> 95 rue Boecklin - 67000 Strasbourg </strong>
+                <br>
+                Consultations sur rendez-vous au <strong> 06.95.84.83.58 </strong> ou
+                pour tout renseignement : <a href="mailto:quach.stephanie@gmail.com">quach.stephanie@gmail.com</a>
+            </section>
+        </div>
 
-					var myDIV = document.createElement("div");
-					myDIV.setAttribute("id","conteneur");
-					var node = document.createTextNode("Sélectionnez le nombre de cases du damier");
-					myDIV.appendChild(node);
-					myMain.appendChild(myDIV);
+        <hr>
 
-					var userInput = document.createElement("input");
-					userInput.setAttribute("id","userInput");
-					userInput.setAttribute("type","number");
-					userInput.setAttribute("min","0");
-					userInput.setAttribute("placeholder","0");
-					userInput.addEventListener("change",createDamier);
-					myDIV.appendChild(userInput);
-		
-
-					function createDamier()
-					{
-
-						var dimension = userInput.value;
-						//colonnes et lignes seront incrémentés pour permettre la génération du tableau (et éventuellement sortir de la boucle)
-						colonnes = 0;
-						lignes = 0;
-						if (document.getElementById("myDIV2"))
-						{
-							var myDIV2 = document.getElementById("myDIV2");
-							myMain.removeChild(myDIV2);
-						}
-						var myDIV2 = document.createElement("div");
-						myDIV2.setAttribute("id","myDIV2");
-						myMain.appendChild(myDIV2);
-						var myTab = document.createElement("table");
-						myTab.setAttribute("id","table_deux");
-						myDIV2.appendChild(myTab);
-						for (colonnes = 0; colonnes<dimension; colonnes++) //on créer les colonnes 
-						{
-							var myTR = document.createElement("tr");
-							myTab.appendChild(myTR);
-							for(lignes = 0;lignes<dimension;lignes++) //et on vérifie si la cellule est pair ou impaire
-							{
-								if (((lignes+colonnes)%2 == 0))
-								{
-									myTD = document.createElement("td");
-									myTD.setAttribute("id","bloc_trois_un");
-									myTR.appendChild(myTD);
-								}
-								else
-								{
-									myTD = document.createElement("td");
-									myTD.setAttribute("id","bloc_trois_deux");
-									myTR.appendChild(myTD);
-								}
-								
-							}
-						}
-					}
-			</script>
-	</main>
-
-		<footer> <!-- Informations de contact : réseaux sociaux, e-mail..-->
-			<p> Kevin LI <br/>
-				0676330170 <br/>
-				<a href="mailto: li.kevin67@outlook.com"> Cliquez ici pour m'envoyer un e-mail </a>
-		</footer>
-	</body>
-
-
+        <div class="text-left">
+            <section id="adeli-text">
+                Je suis enregistrée au Répertoire ADELI des professionnels de la santé, sous le numéro:
+                <strong> 679309286. </strong>
+                Cela vous certifie que j'ai obtenu un diplôme reconnu par l'Etat et enregistré conformément à
+                la loi. <br>
+                Numéro SIRET: <strong> 81284763000017 </strong>
+            </section>
+            <img class="mb-1" src="assets/adeli.jpg" alt="" id="adeli">
+        </div>
+    </div>
+</body>
 </html>
+
+
+<script src="js/index.js" type="text/javascript"></script>

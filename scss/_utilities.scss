@@ -1,0 +1,62 @@
+$values : (1,2,3,4,5);
+
+@each $value in $values {
+  .m-#{$value} {
+    margin: #{$value}rem;
+  }
+  .my-#{$value} {
+    margin: #{$value}rem 0;
+  }
+  .mx-#{$value} {
+    margin: 0 #{$value}rem;
+  }
+  .my-#{$value} {
+    margin: #{$value}rem 0;
+  }
+  .mt-#{$value} {
+    margin-top: #{$value}rem;
+  }
+  .mb-#{$value} {
+    margin-bottom: #{$value}rem;
+  }
+  .ml-#{$value} {
+    margin-left: #{$value}rem;
+  }
+  .mr-#{$value} {
+    margin-right: #{$value}rem;
+  }
+
+  .p-#{$value} {
+    padding: #{$value}rem;
+  }
+  .py-#{$value} {
+    padding: #{$value}rem 0;
+  }
+  .px-#{$value} {
+    padding: 0 #{$value}rem;
+  }
+  .py-#{$value} {
+    padding: #{$value}rem 0;
+  }
+  .pt-#{$value} {
+    padding-top: #{$value}rem;
+  }
+  .pb-#{$value} {
+    padding-bottom: #{$value}rem;
+  }
+  .pl-#{$value} {
+    padding-left: #{$value}rem;
+  }
+  .pr-#{$value} {
+    padding-right: #{$value}rem;
+  }
+}
+
+//utilities
+%link {
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
