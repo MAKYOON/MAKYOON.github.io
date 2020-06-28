@@ -1,3 +1,5 @@
+//creating classes similar to bootstrap margin/padding classes
+
 $values : (1,2,3,4,5);
 
 @each $value in $values {
@@ -52,7 +54,7 @@ $values : (1,2,3,4,5);
   }
 }
 
-//utilities
+//removes underline + changes opacity on hover
 %link {
   text-decoration: none;
 

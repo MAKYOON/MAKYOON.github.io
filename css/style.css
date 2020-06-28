@@ -327,10 +327,18 @@ a:hover {
 
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, Helvetica;
   line-height: 1.6rem;
   font-size: 1.2rem;
   background-color: darkgrey;
+}
+
+.global-container {
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 70%;
+  box-shadow: 0.3em 0.3em 0.3em, -0.3em 0.3em 0.3em;
 }
 
 #logo {
@@ -344,12 +352,6 @@ body {
 header {
   height: 150px;
   border-bottom: 0.5px solid darkgrey;
-  background: #4ca2cd;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #67B26F, #4ca2cd);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #67B26F, #4ca2cd);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 header div:first-child {
   display: flex;
@@ -365,15 +367,11 @@ header ul {
   display: flex;
   list-style: none;
 }
-header li {
-  padding: 1rem;
-}
-
-nav a {
+header ul a {
   color: black;
 }
-nav a a:hover {
-  background-color: lightgrey;
+header li {
+  padding: 1rem;
 }
 
 .text-title {
@@ -402,14 +400,6 @@ nav a a:hover {
 }
 .container-contact iframe {
   justify-self: center;
-}
-
-.global-container {
-  background-color: white;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 70%;
-  box-shadow: 0.3em 0.3em 0.3em, -0.3em 0.3em 0.3em;
 }
 
 #adeli {

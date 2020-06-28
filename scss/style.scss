@@ -1,17 +1,30 @@
 @import "_utilities";
 
+//Removed automatic margin
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, Helvetica;
   line-height: 1.6rem;
   font-size: 1.2rem;
   background-color: darkgrey;
 }
 
+//whole content is inside a div (to allow margins on both side)
+.global-container {
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 70%;
+  box-shadow: 0.3em 0.3em 0.3em, -0.3em 0.3em 0.3em;
+}
+
+
+//just extends %link which removes text-decoration & change opacity on hover
 a {
   @extend %link;
 }
 
+//placing the img logo
 #logo {
   padding-right: 1rem;
   width: 5rem;
@@ -20,12 +33,11 @@ a {
   margin: auto 0;
 }
 
+
 header {
+    //allows us to see where the header stops
     height: 150px;
     border-bottom: 0.5px solid darkgrey;
-    background: #4ca2cd;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #67B26F, #4ca2cd);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #67B26F, #4ca2cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     //container with logo/title & navbar
     div:first-child {
@@ -33,7 +45,7 @@ header {
       display: flex;
       justify-content: space-between;
 
-      //the whole div is a link to current page
+      //the whole logo is a link to current page
       a {
         display: flex;
 
@@ -47,6 +59,10 @@ header {
     ul {
       display: flex;
       list-style: none;
+      //the links
+      a {
+        color: black;
+      }
     }
 
     li {
@@ -54,24 +70,17 @@ header {
     }
 }
 
-nav {
-  a {
-    color: black;
-
-    a:hover {
-      background-color: lightgrey;
-    }
-  }
-}
 
 .text-title {
   margin-left: 2rem;
 }
 
+//basically places the text to the left and the img to the right
 .text-left {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
 
+  //Section contains the text
   section {
     margin: 0 0 0 4rem;
   }
@@ -92,17 +101,10 @@ nav {
   align-items: center;
   text-align: center;
 
+  //iframe is the google map
   iframe {
     justify-self: center;
   }
-}
-
-.global-container {
-  background-color: white;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 70%;
-  box-shadow: 0.3em 0.3em 0.3em, -0.3em 0.3em 0.3em;
 }
 
 #adeli {
