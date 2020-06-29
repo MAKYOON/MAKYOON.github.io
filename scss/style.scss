@@ -9,17 +9,17 @@ body {
   font-family: Arial, Helvetica;
   line-height: 1.6rem;
   font-size: 1.2rem;
-  background-color: darkgrey;
+  //background-color: darkgrey;
 }
 
 //whole content is inside a div (to allow margins on both side)
-.global-container {
+/*.global-container {
   background-color: white;
   margin-right: auto;
   margin-left: auto;
-  max-width: 70%;
+  max-width: 85%;
   box-shadow: 0.3em 0.3em 0.3em, -0.3em 0.3em 0.3em;
-}
+}*/
 
 
 //just extends %link which removes text-decoration & change opacity on hover
@@ -39,14 +39,14 @@ a {
 
 header {
     //allows us to see where the header stops
-    min-height: 5vh;
+    height: 15vh;
     border-bottom: 0.5px solid darkgrey;
 
     //container with logo/title & navbar
     div:first-child {
 
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
 
       //the whole logo is a link to current page
       a {
