@@ -320,6 +320,7 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 a:hover {
   opacity: 0.7;
@@ -328,8 +329,41 @@ a:visited {
   color: black;
 }
 
+@media screen and (max-width: 1540px) {
+  header nav {
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    width: 35vh;
+    background-color: blue;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav ul a {
+    color: white;
+  }
+
+  /*#hamburger {
+    align-self: center;
+    margin-right: 5rem;
+    &:hover {
+      cursor: pointer;
+    }
+    div {
+      width: 35px;
+      height: 3px;
+      background-color: black;
+      margin-bottom: 6px;
+    }
+  }*/
+}
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica;
   line-height: 1.6rem;
   font-size: 1.2rem;
@@ -353,7 +387,7 @@ body {
 }
 
 header {
-  height: 150px;
+  min-height: 5vh;
   border-bottom: 0.5px solid darkgrey;
 }
 header div:first-child {

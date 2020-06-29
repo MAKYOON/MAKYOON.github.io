@@ -1,8 +1,11 @@
 @import "_utilities";
+@import "_mediaqueries.scss";
 
 //Removed automatic margin
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica;
   line-height: 1.6rem;
   font-size: 1.2rem;
@@ -36,7 +39,7 @@ a {
 
 header {
     //allows us to see where the header stops
-    height: 150px;
+    min-height: 5vh;
     border-bottom: 0.5px solid darkgrey;
 
     //container with logo/title & navbar

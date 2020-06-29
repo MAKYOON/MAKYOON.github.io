@@ -1,0 +1,34 @@
+@media screen and (max-width: 1540px) {
+  header {
+    nav {
+      position: absolute;
+      right: 0px;
+      height: 100vh;
+      width: 35vh;
+      background-color: blue;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+  /*#hamburger {
+    align-self: center;
+    margin-right: 5rem;
+    &:hover {
+      cursor: pointer;
+    }
+    div {
+      width: 35px;
+      height: 3px;
+      background-color: black;
+      margin-bottom: 6px;
+    }
+  }*/
+}

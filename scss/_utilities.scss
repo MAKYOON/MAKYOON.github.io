@@ -57,6 +57,7 @@ $values : (1,2,3,4,5);
 //removes underline + changes opacity on hover
 %link {
   text-decoration: none;
+  color: black;
 
   &:hover {
     opacity: 0.7;
