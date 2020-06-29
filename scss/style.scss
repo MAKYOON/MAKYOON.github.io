@@ -41,10 +41,9 @@ header {
     //allows us to see where the header stops
     height: 15vh;
     border-bottom: 0.5px solid darkgrey;
-
+    width: 100%;
     //container with logo/title & navbar
     div:first-child {
-
       display: flex;
       justify-content: space-around;
 

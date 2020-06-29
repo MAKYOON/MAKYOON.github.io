@@ -67,3 +67,8 @@ $values : (1,2,3,4,5);
     color : black;
   }
 }
+
+.resize-animation-stopper {
+  animation: none !important;
+  transition: none !important;
+}
