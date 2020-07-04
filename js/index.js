@@ -21,7 +21,7 @@ hamburger.addEventListener('click', () => {
 //this is so we can get rid of the dropdown by clicking anywhere else on the page
 //we have to check for the target ID because if we click on the burger it runs both listeners and so nothing happens
 body.addEventListener('click', (e) => {
-    if (e.target.id != "hamburger" && !e.target.classList.contains('dropdownbtn')) {
+    if (e.target.id != "hamburger" && !e.target.classList.contains('dropdownbtn') && e.target.id != "navbar") {
         nav.classList.remove('nav-active');
         dropdowncontents.forEach(element => {
             element.classList.remove('dropdown-click');

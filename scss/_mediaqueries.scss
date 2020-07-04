@@ -11,15 +11,24 @@
       position: absolute;
       right: 0px;
       min-height: 85vh;
-      top: 15vh;
+      top: 12vh;
       width: 35vh;
       background: #0076db;  /* fallback for old browsers */
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
 
+      .dropdownbtn {
+        white-space: nowrap;
+        width: 100px;
+      }
+
       .dropdown-click {
-          position: relative;
-          display: block;
+         position: relative;
+         background-color: darkgrey;
+         a {
+           border: 1px solid black;
+         }
+
       }
 
       .dropdown-content {

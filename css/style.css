@@ -318,6 +318,70 @@
   padding-right: 5rem;
 }
 
+.m-6 {
+  margin: 6rem;
+}
+
+.my-6 {
+  margin: 6rem 0;
+}
+
+.mx-6 {
+  margin: 0 6rem;
+}
+
+.my-6 {
+  margin: 6rem 0;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+.ml-6 {
+  margin-left: 6rem;
+}
+
+.mr-6 {
+  margin-right: 6rem;
+}
+
+.p-6 {
+  padding: 6rem;
+}
+
+.py-6 {
+  padding: 6rem 0;
+}
+
+.px-6 {
+  padding: 0 6rem;
+}
+
+.py-6 {
+  padding: 6rem 0;
+}
+
+.pt-6 {
+  padding-top: 6rem;
+}
+
+.pb-6 {
+  padding-bottom: 6rem;
+}
+
+.pl-6 {
+  padding-left: 6rem;
+}
+
+.pr-6 {
+  padding-right: 6rem;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -654,6 +718,70 @@ a:visited {
   padding-right: 5rem;
 }
 
+.m-6 {
+  margin: 6rem;
+}
+
+.my-6 {
+  margin: 6rem 0;
+}
+
+.mx-6 {
+  margin: 0 6rem;
+}
+
+.my-6 {
+  margin: 6rem 0;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+.ml-6 {
+  margin-left: 6rem;
+}
+
+.mr-6 {
+  margin-right: 6rem;
+}
+
+.p-6 {
+  padding: 6rem;
+}
+
+.py-6 {
+  padding: 6rem 0;
+}
+
+.px-6 {
+  padding: 0 6rem;
+}
+
+.py-6 {
+  padding: 6rem 0;
+}
+
+.pt-6 {
+  padding-top: 6rem;
+}
+
+.pb-6 {
+  padding-bottom: 6rem;
+}
+
+.pl-6 {
+  padding-left: 6rem;
+}
+
+.pr-6 {
+  padding-right: 6rem;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -679,16 +807,23 @@ a:visited {
     position: absolute;
     right: 0px;
     min-height: 85vh;
-    top: 15vh;
+    top: 12vh;
     width: 35vh;
     background: #0076db;
     /* fallback for old browsers */
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
+  header nav .dropdownbtn {
+    white-space: nowrap;
+    width: 100px;
+  }
   header nav .dropdown-click {
     position: relative;
-    display: block;
+    background-color: darkgrey;
+  }
+  header nav .dropdown-click a {
+    border: 1px solid black;
   }
   header nav .dropdown-content {
     position: relative;
@@ -748,7 +883,7 @@ body {
 }
 
 header {
-  height: 15vh;
+  height: 12vh;
   border-bottom: 0.5px solid darkgrey;
   width: 100%;
   background: #005AA7;
@@ -757,6 +892,8 @@ header {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #FFFDE4, #005AA7);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  z-index: 1;
 }
 header div:first-child {
   display: flex;
@@ -837,16 +974,15 @@ on hover, we simply change the transform to scale 1 and set it to visible*/
 
 /* handling dropdown : position absolute to avoid moving other elements / display set to none
 display : block on hover (which is the default value) */
-.dropdown div {
+.dropdown .dropdown-content {
   display: none;
   position: absolute;
-  text-align: center;
 }
-.dropdown div a {
+.dropdown .dropdown-content a {
   border: 1px solid black;
   background-color: grey;
 }
-.dropdown:hover div {
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
