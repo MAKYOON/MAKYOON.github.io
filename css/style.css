@@ -802,34 +802,46 @@ a:visited {
     align-items: center;
     position: absolute;
     right: 0px;
-    min-height: 85vh;
-    top: 10.5vh;
-    width: 35vh;
+    top: 16vh;
+    width: 45vh;
+    min-height: 84vh;
+    margin: 0;
     background: #0076db;
-    /* fallback for old browsers */
+    padding-left: 0;
+  }
+  header #navbar-items li {
+    width: 45vh;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  header #navbar-items .dropdown {
+    text-align: center;
   }
   header #navbar-items .dropdown-click {
-    background-color: darkgrey;
+    background: #80b1ff;
+    margin: 0;
   }
   header #navbar-items .dropdown-click a {
     border: 1px solid black;
     display: flex;
     flex-flow: column wrap;
+    padding: 0.5rem;
   }
-  header #navbar-items .dropdown-content {
-    display: none !important;
-  }
-  header #navbar-items a {
-    color: black;
-  }
-  header #navbar-items a:visited {
-    color: black;
-  }
-}
-.nav-active {
-  transform: translateX(0%);
-}
 
+  .nav-active {
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .resize-animation-stopper {
+    transition: none !important;
+  }
+
+  .nav-inactive {
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -847,7 +859,7 @@ body {
 }
 
 header {
-  min-height: 10.5vh;
+  height: 16vh;
   width: 100%;
   background: #005AA7;
   /* fallback for old browsers */
@@ -857,6 +869,7 @@ header {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   position: fixed;
   z-index: 1;
+  white-space: nowrap;
 }
 header #brand a {
   display: flex;
@@ -921,8 +934,10 @@ display : block on hover (which is the default value) */
   position: relative;
   display: inline-block;
 }
-.dropdown:hover .dropdown-content {
-  display: block;
+@media only screen and (min-width: 1150px) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }
 
 .dropdown-content {
@@ -951,9 +966,9 @@ display : block on hover (which is the default value) */
 }
 #hamburger div {
   width: 25px;
-  height: 3px;
+  height: 2px;
   background-color: black;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 /*# sourceMappingURL=style.css.map */

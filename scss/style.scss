@@ -25,16 +25,16 @@ a {
   margin: auto 0;
 }
 
-
 header {
   //allows us to see where the header stops
-  min-height: 10.5vh;
+  height: (100 - $responsive-nav-height);
   width: 100%;
-  background: #005AA7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: #005AA7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   position: fixed;
   z-index: 1;
+  white-space: nowrap;
 
   #brand a {
     display: flex;
@@ -44,6 +44,7 @@ header {
   nav {
     display: flex;
     justify-content: space-around;
+
     ul {
       list-style: none;
       display: flex;
@@ -111,10 +112,11 @@ display : block on hover (which is the default value) */
 .dropdown {
   position: relative;
   display: inline-block;
-
-  &:hover {
-    .dropdown-content {
-      display: block;
+  @media only screen and (min-width: 1150px) {
+      &:hover {
+        .dropdown-content {
+          display: block;
+        }
     }
   }
 }
@@ -125,8 +127,6 @@ display : block on hover (which is the default value) */
   background: #80b1ff;  /* fallback for old browsers */
   min-width: 15rem;
   margin: 0;
-
-
   a {
     border: 1px solid black;
     display: block;
@@ -145,9 +145,9 @@ display : block on hover (which is the default value) */
   }
   div {
     width: 25px;
-    height: 3px;
+    height: 2px;
     background-color: black;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
   }
 }
 
