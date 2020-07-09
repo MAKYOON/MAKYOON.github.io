@@ -27,7 +27,7 @@ a {
 
 header {
   //allows us to see where the header stops
-  height: (100 - $responsive-nav-height);
+  height: 12%;
   width: 100%;
   background: #005AA7; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7); /* Chrome 10-25, Safari 5.1-6 */
@@ -140,6 +140,7 @@ display : block on hover (which is the default value) */
 #hamburger {
   align-self: center;
   display: none;
+
   &:hover {
     cursor: pointer;
   }
@@ -148,7 +149,23 @@ display : block on hover (which is the default value) */
     height: 2px;
     background-color: black;
     margin-bottom: 6px;
+    transition: 0.5s ease-in-out;
   }
+
+}
+
+.dropdownbtn {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+  margin-left: 10px;
 }
 
 

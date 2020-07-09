@@ -1,12 +1,12 @@
 const hamburger = document.querySelector('#hamburger');
 const nav = document.querySelector('#navbar-items');
 const body = document.querySelector('body');
-const dropdownbtn = document.querySelectorAll('.dropdownbtn');
+const dropdown = document.querySelectorAll('.dropdown');
 const dropdowncontents = document.querySelectorAll('.dropdown-content');
 
 //handling the navbar in small medias : instead of hovering we need to click
-dropdownbtn.forEach((element, index) => {
-    element.addEventListener('click', () => {
+dropdown.forEach((element, index) => {
+    element.addEventListener('click', (e) => {
         if (document.body.clientWidth < 1150) {
             dropdowncontents[index].classList.toggle('dropdown-content');
             dropdowncontents[index].classList.toggle('dropdown-click');
@@ -19,6 +19,7 @@ dropdownbtn.forEach((element, index) => {
 //toggling the nav-active class which plays the animation of fading in the dropdown in and out
 hamburger.addEventListener('click', () => {
     console.log("clicked");
+    hamburger.classList.toggle('hamburger-active');
     nav.classList.toggle('nav-inactive');
     nav.classList.toggle('nav-active');
 });
@@ -27,8 +28,9 @@ hamburger.addEventListener('click', () => {
 //we have to check for the target ID because if we click on the burger it runs both listeners and so nothing happens
 body.addEventListener('click', (e) => {
     if (e.target.id != "hamburger" && !e.target.classList.contains('dropdownbtn') && e.target.id != "navbar") {
-        nav.classList.toggle('nav-inactive');
-        nav.classList.toggle('nav-active');
+        nav.classList.add('nav-inactive');
+        nav.classList.remove('nav-active');
+        hamburger.classList.remove('hamburger-active');
         dropdowncontents.forEach(element => {
             element.classList.remove('dropdown-click');
             element.classList.add('dropdown-content');

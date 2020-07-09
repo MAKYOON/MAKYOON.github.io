@@ -1,7 +1,6 @@
 @import "_utilities";
 
 $responsive-nav-width : 45vh;
-$responsive-nav-height : 84vh;
 
 @media screen and (max-width: 1150px) {
 
@@ -20,9 +19,9 @@ $responsive-nav-height : 84vh;
       align-items: center;
       position: absolute;
       right: 0px;
-      top: (100 - $responsive-nav-height);
+      top: 12vh;
       width: $responsive-nav-width;
-      min-height: $responsive-nav-height;
+      min-height: 100vh;
       margin: 0;
       background: #0076db;
       padding-left: 0;
@@ -37,6 +36,11 @@ $responsive-nav-height : 84vh;
 
       .dropdown {
         text-align: center;
+      }
+
+      .dropdownbtn {
+        margin-left: auto;
+        margin-right: auto;
       }
 
       .dropdown-click {
@@ -66,5 +70,28 @@ $responsive-nav-height : 84vh;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
+
+  .hamburger-active {
+    #hamburger1 {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      transition: 0.5s ease-in-out;
+      position: absolute;
+    }
+    #hamburger2 {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      transition: 0.5s ease-in-out;
+      position: absolute;
+    }
+    #hamburger3 {
+      opacity: 0;
+    }
+  }
+
 }
 
