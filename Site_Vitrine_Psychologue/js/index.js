@@ -6,7 +6,7 @@ const dropdowncontents = document.querySelectorAll('.dropdown-content');
 
 //handling the navbar in small medias : instead of hovering we need to click
 dropdown.forEach((element, index) => {
-    element.addEventListener('click', (e) => {
+    element.addEventListener('click', () => {
         if (document.body.clientWidth < 1150) {
             dropdowncontents[index].classList.toggle('dropdown-content');
             dropdowncontents[index].classList.toggle('dropdown-click');
