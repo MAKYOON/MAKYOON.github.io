@@ -1,6 +1,7 @@
-@import "_utilities";
+@import "utilities";
 
 $responsive-nav-width : 45vh;
+$header-height : 7rem;
 
 @media screen and (max-width: 1150px) {
 
@@ -18,8 +19,8 @@ $responsive-nav-width : 45vh;
       flex-direction: column;
       align-items: center;
       position: absolute;
-      right: 0px;
-      top: 12vh;
+      right: 0;
+      top: $header-height;
       width: $responsive-nav-width;
       min-height: 100vh;
       margin: 0;

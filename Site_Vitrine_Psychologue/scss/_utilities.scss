@@ -1,6 +1,6 @@
 //creating classes similar to bootstrap margin/padding classes
 
-$values : (1,2,3,4,5,6);
+$values : (1,2,3,4,5,6,7);
 
 @each $value in $values {
   .m-#{$value} {

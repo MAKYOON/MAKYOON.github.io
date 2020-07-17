@@ -1,12 +1,12 @@
-@import "_utilities";
-@import "_mediaqueries.scss";
+@import "utilities";
+@import "mediaqueries";
 
 //Removed automatic margin
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6rem;
   font-size: 1.2rem;
 }
@@ -15,6 +15,7 @@ body {
 //just extends %link which removes text-decoration & change opacity on hover
 a {
   @extend %link;
+
 }
 
 //placing the img logo
@@ -27,11 +28,11 @@ a {
 
 header {
   //allows us to see where the header stops
-  height: 12%;
+  height: $header-height;
   width: 100%;
-  background: #005AA7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*//background: #005AA7; !* fallback for old browsers *!
+  background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7); !* Chrome 10-25, Safari 5.1-6 *!
+  background: linear-gradient(to right, #FFFDE4, #005AA7); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
   position: fixed;
   z-index: 1;
   white-space: nowrap;
@@ -54,33 +55,30 @@ header {
 
   li {
     padding: 1rem;
-    &:hover {
-      background-color: lightgrey;
+    a:hover {
+      color: #15a33d;
     }
   }
 }
 
-.text-title {
-  margin-left: 2rem;
-}
 
 //basically places the text to the left and the img to the right
 .text-left {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-
-  //Section contains the text
-  section {
-    margin: 0 0 0 4rem;
-  }
-
-  img {
-    justify-self: center;
-  }
+  display: flex;
+  justify-content: space-around;
 
   div {
     align-self: center;
+    max-width: 60%;
+    min-width: 40%;
   }
+
+  section {
+    align-self: center;
+    flex-basis: 40%;
+    text-align: center;
+  }
+
 }
 
 
@@ -101,10 +99,6 @@ header {
   max-height: 200px;
 }
 
-#adeli-text {
-  text-align: center;
-  align-self: center;
-}
 
 /* handling dropdown : position absolute to avoid moving other elements / display set to none
 display : block on hover (which is the default value) */
@@ -164,7 +158,7 @@ display : block on hover (which is the default value) */
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid white;
+  border-top: 5px solid #15a33d;
   margin-left: 10px;
 }
 

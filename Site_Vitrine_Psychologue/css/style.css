@@ -382,6 +382,70 @@
   padding-right: 6rem;
 }
 
+.m-7 {
+  margin: 7rem;
+}
+
+.my-7 {
+  margin: 7rem 0;
+}
+
+.mx-7 {
+  margin: 0 7rem;
+}
+
+.my-7 {
+  margin: 7rem 0;
+}
+
+.mt-7 {
+  margin-top: 7rem;
+}
+
+.mb-7 {
+  margin-bottom: 7rem;
+}
+
+.ml-7 {
+  margin-left: 7rem;
+}
+
+.mr-7 {
+  margin-right: 7rem;
+}
+
+.p-7 {
+  padding: 7rem;
+}
+
+.py-7 {
+  padding: 7rem 0;
+}
+
+.px-7 {
+  padding: 0 7rem;
+}
+
+.py-7 {
+  padding: 7rem 0;
+}
+
+.pt-7 {
+  padding-top: 7rem;
+}
+
+.pb-7 {
+  padding-bottom: 7rem;
+}
+
+.pl-7 {
+  padding-left: 7rem;
+}
+
+.pr-7 {
+  padding-right: 7rem;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -777,6 +841,70 @@ a:visited {
   padding-right: 6rem;
 }
 
+.m-7 {
+  margin: 7rem;
+}
+
+.my-7 {
+  margin: 7rem 0;
+}
+
+.mx-7 {
+  margin: 0 7rem;
+}
+
+.my-7 {
+  margin: 7rem 0;
+}
+
+.mt-7 {
+  margin-top: 7rem;
+}
+
+.mb-7 {
+  margin-bottom: 7rem;
+}
+
+.ml-7 {
+  margin-left: 7rem;
+}
+
+.mr-7 {
+  margin-right: 7rem;
+}
+
+.p-7 {
+  padding: 7rem;
+}
+
+.py-7 {
+  padding: 7rem 0;
+}
+
+.px-7 {
+  padding: 0 7rem;
+}
+
+.py-7 {
+  padding: 7rem 0;
+}
+
+.pt-7 {
+  padding-top: 7rem;
+}
+
+.pb-7 {
+  padding-bottom: 7rem;
+}
+
+.pl-7 {
+  padding-left: 7rem;
+}
+
+.pr-7 {
+  padding-right: 7rem;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -802,7 +930,7 @@ a:visited {
     align-items: center;
     position: absolute;
     right: 0px;
-    top: 12vh;
+    top: 7rem;
     width: 45vh;
     min-height: 100vh;
     margin: 0;
@@ -883,14 +1011,11 @@ body {
 }
 
 header {
-  height: 12%;
+  height: 7rem;
   width: 100%;
-  background: #005AA7;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFDE4, #005AA7);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*//background: #005AA7; !* fallback for old browsers *!
+  background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7); !* Chrome 10-25, Safari 5.1-6 *!
+  background: linear-gradient(to right, #FFFDE4, #005AA7); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
   position: fixed;
   z-index: 1;
   white-space: nowrap;
@@ -910,26 +1035,23 @@ header nav ul {
 header li {
   padding: 1rem;
 }
-header li:hover {
-  background-color: lightgrey;
-}
-
-.text-title {
-  margin-left: 2rem;
+header li a:hover {
+  color: #15a33d;
 }
 
 .text-left {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-}
-.text-left section {
-  margin: 0 0 0 4rem;
-}
-.text-left img {
-  justify-self: center;
+  display: flex;
+  justify-content: space-around;
 }
 .text-left div {
   align-self: center;
+  max-width: 60%;
+  min-width: 40%;
+}
+.text-left section {
+  align-self: center;
+  flex-basis: 40%;
+  text-align: center;
 }
 
 .container-contact {
@@ -945,11 +1067,6 @@ header li:hover {
 #adeli {
   max-width: 200px;
   max-height: 200px;
-}
-
-#adeli-text {
-  text-align: center;
-  align-self: center;
 }
 
 /* handling dropdown : position absolute to avoid moving other elements / display set to none
@@ -1006,7 +1123,7 @@ display : block on hover (which is the default value) */
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid white;
+  border-top: 5px solid #15a33d;
   margin-left: 10px;
 }
 
