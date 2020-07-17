@@ -1,11 +1,14 @@
 @import "utilities";
 @import "mediaqueries";
 
-//Removed automatic margin
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+//Removed automatic margin
+body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6rem;
   font-size: 1.2rem;
