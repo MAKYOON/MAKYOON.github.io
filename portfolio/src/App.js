@@ -1,35 +1,30 @@
 import React from 'react';
-import './App.css';
-import Todos from "./components/Todos";
+import {BrowserRouter as Router, Route, Switch,} from "react-router-dom";
+import Header from "./Components/Header";
+import Home from "./Views/Home";
+import About from "./Views/About";
+import Posts from "./Views/Posts";
 
-class App extends React.Component {
-    state = {
-        todos: [
-            {
-                id: 1,
-                title: 'Take out the trash',
-                completed: false
-            },
-            {
-                id: 2,
-                title: 'Dinner with wife',
-                completed: false
-            },
-            {
-                id: 3,
-                title: 'Meeting with boss',
-                completed: false
-            }
-        ]
-    }
 
-  render() {
+function App() {
     return (
         <div className="App">
-         <Todos todos={this.state.todos}></Todos>
+            <Router>
+                <Header/>
+                <Switch>
+                    <Route exact path="/">
+                        <Home></Home>
+                    </Route>
+                    <Route path="/about">
+                        <About></About>
+                    </Route>
+                    <Route path="/posts/:id">
+                        <Posts></Posts>
+                    </Route>
+                </Switch>
+            </Router>
         </div>
     );
-  }
 }
 
 export default App;
