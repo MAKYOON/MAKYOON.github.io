@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 function Header() {
     return (
-        <header className="p-3 flex justify-between items-center">
+        <header className="p-3 flex justify-between items-center bg-black text-white">
             <Link to="/" className="font-bold">
                 LI Kevin
             </Link>

@@ -1,7 +1,8 @@
-import React from 'react';
-import {Link} from "react-router-dom";
+import React, {useState} from 'react';
+import {Link, animateScroll as scroll} from 'react-scroll';
 
 function NavigationMenu(props) {
+
     return (
         <div>
             <div
@@ -13,19 +14,52 @@ function NavigationMenu(props) {
                 <li>
                     <Link
                         to="/"
-                        className="text-blue-500 py-3 border-t border-b block"
+                        className="py-3 border-t border-b block"
                         onClick={props.closeMenu}
                     >
-                        Home
+                        Accueil
                     </Link>
                 </li>
                 <li>
                     <Link
-                        to="/about"
-                        className="text-blue-500 py-3 border-b block"
+                        className="py-3 border-t border-b block"
                         onClick={props.closeMenu}
+                        activeClass="active"
+                        to="presentation"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
                     >
-                        About
+                        Présentation
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        className="py-3 border-t border-b block"
+                        onClick={props.closeMenu}
+                        activeClass="active"
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        My Projects
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        className="py-3 border-t border-b block"
+                        onClick={props.closeMenu}
+                        activeClass="active"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        Contact
                     </Link>
                 </li>
             </ul>
