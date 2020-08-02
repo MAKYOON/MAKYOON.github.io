@@ -8,20 +8,20 @@ function Contact() {
     const [info, setInfo] = useState({
         name: '',
         email: '',
+        subject: '',
         message: ''
     });
 
 
     const [result, setResult] = useState(null);
 
-    const sendEmail = event => {
-        event.preventDefault();
+    const sendEmail = (e) => {
+        e.preventDefault();
         axios
             .post('/send', {...info})
             .then(response => {
                 setResult(response.data);
-                setInfo({name: '', email: '', message: ''});
-                console.log(result);
+                setInfo({name: '', email: '', subject: '', message: ''});
             })
             .catch(() => {
                 setResult({success: false, message: 'Something went wrong. Try again later'});
@@ -39,16 +39,19 @@ function Contact() {
 
     return (
         <section id="contact" className="text-white bg-black w-full flex flex-col">
+            {result && (<p className={`${result.success ? 'success' : 'error'}`}>{result.message}</p>)}
+
             <h1 className="font-bold  text-center p-3 text-3xl"> CONTACT </h1>
             <form className="flex flex-col items-center" action="#" method="post">
                 <div className="w-2/5">
-                    <label htmlFor="nom">Nom</label>
+                    <label htmlFor="name">Nom</label>
                     <br/>
-                    <input id="nom"
+                    <input id="name"
                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-3"
                            type="text"
                            name="name"
                            onChange={onInputChange}
+                           value={info.name}
                     />
                 </div>
                 <div className="w-2/5">
@@ -58,6 +61,17 @@ function Contact() {
                            type="email"
                            name="email"
                            onChange={onInputChange}
+                           value={info.email}
+                    />
+                </div>
+                <div className="w-2/5">
+                    <label htmlFor="subject">Objet</label>
+                    <input id="subject"
+                              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-3"
+                              type="text"
+                              name="subject"
+                              onChange={onInputChange}
+                              value={info.subject}
                     />
                 </div>
                 <div className="w-2/5">
@@ -67,6 +81,7 @@ function Contact() {
                               type="text"
                               name="message"
                               onChange={onInputChange}
+                              value={info.message}
                     />
                 </div>
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
