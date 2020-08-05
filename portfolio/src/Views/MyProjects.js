@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 function MyProjects() {
     return (
-        <section id="projects" className="bg-blue-500">
+        <section id="projects" className="bg-blue-500 w-full h-screen">
             <h1 className="font-bold text-white text-center p-3 text-3xl"> PROJECTS </h1>
             <ul>
                 <li>

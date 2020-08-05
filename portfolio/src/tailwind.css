@@ -14385,12 +14385,34 @@ video {
 
 .success {
   text-align: center;
-  background-color: green;
+  background-color:  #f0fff4;
+  border-width: 1px;
+  border-color: #68d391;
+  color: #2f855a;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  position: relative;
 }
 
 .error {
   text-align: center;
-  background-color: red;
+  background-color: #fff5f5;
+  border-width: 1px;
+  border-color: #fc8181;
+  color: #c53030;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  position: relative;
+}
+
+.clip-polygon-bottom {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%, 0 53%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%, 0 53%);
+}
+
+.clip-polygon-top {
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%, 0 53%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%, 0 53%);
 }
 
 @media (min-width: 640px) {
