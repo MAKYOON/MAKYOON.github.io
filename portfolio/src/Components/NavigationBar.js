@@ -32,7 +32,7 @@ function NavigationBar(props) {
                     <animated.div
                         key={key}
                         style={props}
-                        className="bg-black-t-50 fixed top-0 left-0 w-full h-full z-50"
+                        className="bg-black-t-50 fixed top-0 left-0 w-full h-full z-100"
                         onClick={() => setShowMenu(false)}
                     >️
                     </animated.div>)
@@ -43,7 +43,7 @@ function NavigationBar(props) {
                     <animated.div
                         key={key}
                         style={props}
-                        className="fixed bg-white top-0 left-0 w-2/5 h-full z-50 shadow p-3 text-black"
+                        className="fixed bg-white top-0 left-0 w-2/5 h-full z-100 shadow p-3 text-black"
                     >️
                         <NavigationMenu
                             closeMenu={() => setShowMenu(false)}
