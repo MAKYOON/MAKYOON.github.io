@@ -68,4 +68,34 @@
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%, 0 53%);
 }
 
+.color-primary {
+    background-color: #385668;
+}
+
+.color-primary-2 {
+    background-color: #414571;
+}
+
+.color-secondary {
+    background-color: #A36A53;
+}
+
+.border-button {
+    border : 1px solid #A38E53;
+}
+
+
+
+.pin-top {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.pin-bottom {
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+}
+
 

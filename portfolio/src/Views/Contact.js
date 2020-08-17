@@ -41,17 +41,14 @@ function Contact() {
     };
 
     return (
-        <section style={{backgroundImage: `url(${require("../Assets/contact.jpg")}` , backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
+        <section style={{backgroundImage: `url(${require("../Assets/wood-bg.jpg")}` , backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
                  id="contact"
-                 className="text-black w-full flex flex-col h-screen justify-around"
+                 className="pt-20 text-white w-full flex flex-col h-screen justify-around"
         >
-            <div >
-            </div>
             {result && (<p className={`${result.success ? 'success' : 'error'}`}>{result.message}</p>)}
-
             <h1  className="font-bold text-center text-3xl"> CONTACT </h1>
             <form className="flex flex-col items-center opacity-100" action="#" method="post" onSubmit={(e) => e.preventDefault()}>
-                <fieldset className="w-2/5">
+                <fieldset className="w-4/5">
                     <label htmlFor="name">Nom</label> <span className="text-red-500">*</span>
                     {errors.name && (<div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"> Ce champ est obligatoire </div>)}
                     <br/>
@@ -64,7 +61,7 @@ function Contact() {
                            ref={register({required: true})}
                     />
                 </fieldset>
-                <fieldset className="w-2/5">
+                <fieldset className="w-4/5">
                     {errors.email && (<div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"> Ce champ est obligatoire </div>)}
                     <label htmlFor="email">Email</label> <span className="text-red-500">*</span>
                     <input id="email"
@@ -76,7 +73,7 @@ function Contact() {
                            ref={register({required: true})}
                     />
                 </fieldset>
-                <fieldset className="w-2/5">
+                <fieldset className="w-4/5">
                     {errors.subject && (<div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"> Ce champ est obligatoire </div>)}
                     <label htmlFor="subject">Objet</label> <span className="text-red-500">*</span>
                     <input id="subject"
@@ -88,7 +85,7 @@ function Contact() {
                               ref={register({required: true})}
                     />
                 </fieldset>
-                <fieldset className="w-2/5 pb-5">
+                <fieldset className="w-4/5 pb-20">
                     {errors.message && (<div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"> Ce champ est obligatoire </div>)}
                     <label htmlFor="message">Message</label> <span className="text-red-500">*</span>
                     <textarea id="message"
@@ -100,14 +97,14 @@ function Contact() {
                               ref={register({required: true})}
                     />
                 </fieldset>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-20 rounded text-xl"
                         type="submit"
                         onClick={handleSubmit(sendEmail)}
                 >
                         Envoyer
                 </button>
             </form>
-            <div className="text-2xl self-center">
+            <div className="text-xl self-center">
                 <div id="mail-contact">
                     <FontAwesomeIcon
                         icon={faAt}

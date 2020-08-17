@@ -1,5 +1,9 @@
 import React from 'react';
 import {animated, useTransition} from "react-spring";
+import {Link} from "react-scroll";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faPaperPlane} from "@fortawesome/free-solid-svg-icons";
+import {faEye} from "@fortawesome/free-solid-svg-icons";
 
 function Presentation() {
 
@@ -10,22 +14,53 @@ function Presentation() {
     })
 
     return (
-        <section id="presentation" className="bg-gray-800 text-white">
+        <section id="presentation" className="pt-20 color-primary text-white">
         {
             displayTransition.map(({ item, key, props }) =>
                 item &&
                 <animated.div
                     key={key}
                     style={props}
-                    className="flex flex-col items-center justify-around w-full h-screen"
+                    className="flex flex-col items-center justify-around w-full min-h-screen"
                 >
                     <h1 className="font-bold text-3xl"> PRESENTATION </h1>
                     <div>
-                        <img className="rounded-full h-48 w-48" src={require("../Assets/photo.jpg")} alt="Photo de profil"/>
+                        <img className="rounded-full h-32 w-32" src={require("../Assets/photo.jpg")} alt="Photo de profil"/>
+                        <p className="text-center text-bold text-xl pt-3">LI Kevin</p>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum dolores eaque earum eligendi enim impedit, ipsam, itaque neque nobis nulla omnis, reiciendis. Accusamus alias at culpa debitis delectus exercitationem facere, facilis, illum magni nisi pariatur quae repudiandae sit, voluptates voluptatibus. Animi aperiam deleniti dignissimos dolor doloremque eligendi error exercitationem fuga fugit illum, incidunt ipsum iusto laborum maiores neque nobis nostrum nulla, numquam officiis quasi quidem rem rerum tempora tenetur veniam. Ad amet assumenda beatae ex facere id laboriosam modi, omnis perferendis placeat quam sed voluptas, voluptate? Ab at cum cupiditate dicta ducimus eius expedita fuga illum iste, magni modi non possimus sed temporibus unde veritatis voluptas. Architecto laboriosam neque officia veniam? Dignissimos et expedita, fugiat ipsum laboriosam magnam pariatur provident quasi recusandae sed. A accusamus commodi consequuntur dolor dolorem doloribus ducimus, ea expedita ipsam iusto maxime minus nemo nulla quidem recusandae sit suscipit temporibus tenetur totam voluptates. Alias fugiat nam necessitatibus qui sit? Cupiditate, eum modi quia repudiandae saepe tempore. Accusamus ad amet blanditiis ducimus earum eveniet explicabo, illum iure nam quas reiciendis saepe tempora ut vel voluptatum? Asperiores consectetur dolorem dolores eaque laborum minus neque officiis sint tenetur voluptatem. Enim exercitationem illum ipsa? Cum cupiditate dolor iure perferendis perspiciatis ratione totam voluptatum! Amet dicta dolorem dolores ea earum eius illum odio officia quasi voluptatem? Ab accusantium aliquam assumenda atque autem deserunt doloremque dolores esse, illo in inventore minima modi natus quod sapiente, sint veritatis voluptate. A adipisci commodi cum eos eum, harum hic impedit incidunt laborum magnam magni modi necessitatibus neque numquam omnis optio possimus praesentium quae quam quia quo rem sit tempora totam veniam voluptatem voluptates voluptatum. Aperiam aspernatur assumenda aut consequatur, deserunt eveniet ex incidunt itaque laborum libero nisi nostrum odio praesentium quaerat quam quis sit soluta ullam. Aperiam corporis dicta ex ipsum natus nemo nihil omnis porro recusandae voluptas. Ad asperiores cumque cupiditate distinctio, earum excepturi impedit libero magni molestiae, natus perferendis possimus, quia quibusdam ratione repellat sed voluptate! Accusamus delectus dicta doloremque expedita harum nisi, officia porro quas quia reprehenderit soluta sunt velit veritatis. Accusantium architecto corporis debitis eius enim, illum ipsum iste quae quia, quisquam quos totam voluptatum. Animi consequuntur cupiditate delectus, deserunt, doloribus eligendi error esse et eveniet excepturi exercitationem facilis fuga fugit in ipsa labore laudantium minima natus numquam obcaecati omnis pariatur quia quibusdam quis quo quos recusandae reiciendis repellendus rerum sequi, similique ullam voluptas voluptate? Ab explicabo modi quisquam rem.
-                    </p>
+                    <div className="pl-3">
+                        <p>
+                            Diplômé d'un <strong> Foundation Degree Jeux Vidéo et Serious Games </strong>, j'ai décidé
+                            de continuer mes études dans le domaine du développement web. Ainsi, je prépare actuellement
+                            une <strong> Licence Pro : Développement Web, Communication et Apprentissages </strong> à
+                            la Faculté de Strasbourg, en alternance au sein de la startup <strong>AirCampus </strong>.
+                        </p>
+                        <br/>
+                        <p>
+                            Ce portfolio retrace les différentes étapes de ma formation et recense ainsi les différents
+                            projets sur lesquels j'ai pu travailler. Si vous avez des questions, n'hésitez pas à me contacter !
+                        </p>
+                    </div>
+                    <div className="flex flex-col space-y-5">
+                        <Link
+                            className="color-secondary cursor-pointer text-white font-bold py-2 px-5 rounded text-xl"
+                            activeClass="active"
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >
+                            <FontAwesomeIcon className="mr-5" icon={faPaperPlane}/>
+                            Me contacter
+                        </Link>
+                        <a href={require("../Assets/CV_LI_Kevin.pdf")} download
+                           className="color-secondary cursor-pointer text-white font-bold py-2 px-5 rounded text-xl"
+                        >
+                            <FontAwesomeIcon className="mr-5" icon={faEye}/>
+                            Consultez mon CV
+                        </a>
+                    </div>
                 </animated.div>)
         }
         </section>
