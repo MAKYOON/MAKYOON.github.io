@@ -17,6 +17,17 @@ function MyProjects() {
             <ProjectCard
                 name="wood-bg.jpg"
                 title="Filler"
+                link="/posts"
+            />
+            <ProjectCard
+                name="wood-bg.jpg"
+                title="Filler"
+                link="/posts"
+            />
+            <ProjectCard
+                name="wood-bg.jpg"
+                title="Filler"
+                link="/posts"
             />
         </section>
     );

@@ -6,7 +6,6 @@ import {animated, useTransition} from "react-spring";
 
 function CardOverlay(propts) {
 
-
     const overlayTransition = useTransition(propts.showOverlay, null, {
         from: { position: 'absolute', opacity: 0 },
         enter: { opacity: 1 },
