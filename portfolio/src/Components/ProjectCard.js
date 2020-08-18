@@ -1,14 +1,23 @@
 import React, {useState} from 'react';
 import CardOverlay from "./CardOverlay";
-
+import onClickOutside from "react-onclickoutside";
 
 function ProjectCard(props) {
 
     const [showOverlay, setShowOverlay] = useState(false);
 
+    ProjectCard.handleClickOutside = () => {
+        setShowOverlay(false);
+    }
+
+    const clickOutsideConfig = {
+        handleClickOutside: () => ProjectCard.handleClickOutside;
+    }
+
     return (
         <div className="p-4"
              onClick={() => setShowOverlay(!showOverlay)}
+
         >
             <figure className="relative">
                 <img className="rounded-md w-full h-48"
@@ -16,8 +25,8 @@ function ProjectCard(props) {
                      alt="Image représentant un projet"
                 />
                 <CardOverlay
-                    title="Blog Post (fetch API from JSONPlaceHolder)"
-                    link="/posts"
+                    title={props.title}
+                    link={props.link}
                     showOverlay={showOverlay}
                 />
             </figure>
@@ -25,4 +34,4 @@ function ProjectCard(props) {
     );
 }
 
-export default ProjectCard;
+export default onClickOutside(ProjectCard, clickOutsideConfig);

@@ -23,6 +23,9 @@ function CardOverlay(propts) {
                     style={props}
                     className="w-full bg-black z-10 h-48 absolute top-0"
                 >
+                    <div className="hidden w-full min-h-screen bg-black">
+
+                    </div>
                     <figcaption className="text-white">
                         <h1 className="absolute pin-top text-center text-lg"> {propts.title} </h1>
                         <Link
@@ -33,6 +36,7 @@ function CardOverlay(propts) {
                             <FontAwesomeIcon className="ml-2 pt-1" icon={faAngleRight}/>
                         </Link>
                     </figcaption>
+
                 </animated.div>
             )
         );
