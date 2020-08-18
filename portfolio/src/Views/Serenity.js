@@ -3,9 +3,9 @@ import React from 'react';
 function Serenity()
 {
 	return (
-		<div className="color-primary text-white text-center">
+		<div className="bg-color-primary text-black text-center">
 			<h1
-				className="text-2xl font-bold color-secondary"
+				className="text-3xl font-bold color-primary-3"
 			>
 				Serenity
 			</h1>
@@ -19,7 +19,7 @@ function Serenity()
 				dans un dossier sur son ordinateur, lui permettant de se rappeler les bons souvenirs.
 			</p>
 			<br/>
-			<h1 className="text-xl font-bold">Contrôles</h1>
+			<h1 className="text-xl font-bold color-primary-3">Contrôles</h1>
 			<br/>
 			<p>
 				Déplacements : Z,Q,S,D <br/>

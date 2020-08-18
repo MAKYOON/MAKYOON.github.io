@@ -12,7 +12,7 @@ function NavigationMenu(props) {
                         onClick={props.closeMenu}
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={-20}
                         duration={500}
                         activeClass="active"
                     >
@@ -26,7 +26,7 @@ function NavigationMenu(props) {
                         to="presentation"
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={40}
                         duration={500}
                     >
                         Présentation
@@ -39,10 +39,10 @@ function NavigationMenu(props) {
                         to="projects"
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={40}
                         duration={500}
                     >
-                        My Projects
+                        Mes Projets
                     </Link>
                 </li>
                 <li className="py-3 border-b-2">
@@ -52,7 +52,7 @@ function NavigationMenu(props) {
                         to="contact"
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={40}
                         duration={500}
                     >
                         Contact

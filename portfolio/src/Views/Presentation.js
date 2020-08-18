@@ -23,7 +23,7 @@ function Presentation() {
                     style={props}
                     className="flex flex-col items-center justify-around w-full min-h-screen"
                 >
-                    <h1 className="font-bold text-3xl color-primary-3"> PRESENTATION </h1>
+                    <h1 className="font-bold text-3xl text-center w-full bg-color-primary-2 text-white p-3"> PRESENTATION </h1>
                     <div>
                         <img className="rounded-full h-32 w-32" src={require("../Assets/photo.jpg")} alt="Photo de profil"/>
                     </div>

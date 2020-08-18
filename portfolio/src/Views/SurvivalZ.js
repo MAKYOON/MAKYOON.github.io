@@ -1,11 +1,11 @@
 import React from 'react';
 
-function SurvivalZ(props)
+function SurvivalZ()
 {
 	return (
-		<div className="color-primary text-white text-center">
+		<div className="bg-color-primary text-black text-center">
 			<h1
-				className="text-2xl font-bold color-secondary"
+				className="text-3xl font-bold color-primary-3"
 			>
 				Survival Z
 			</h1>
@@ -16,7 +16,7 @@ function SurvivalZ(props)
 				de consolider mes acquis sur Unity.
 			</p>
 			<br/>
-			<h1 className="text-xl font-bold">Contrôles</h1>
+			<h1 className="text-xl font-bold color-primary-3">Contrôles</h1>
 			<br/>
 			<p>
 				Déplacements : Z,Q,S,D <br/>

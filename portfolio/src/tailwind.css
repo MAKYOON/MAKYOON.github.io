@@ -14421,12 +14421,16 @@ video {
   color : #E3E2DF;
 }
 
+.color-primary-2 {
+  color: #EE4C7C
+}
+
 .color-primary-3 {
   color: #9A1750;
 }
 
 .bg-color-secondary {
-  background-color: #919192;
+  background-color: #909192;
 }
 
 .border-button {

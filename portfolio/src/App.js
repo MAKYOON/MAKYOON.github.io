@@ -9,6 +9,7 @@ import SurvivalZ from "./Views/SurvivalZ";
 import Accueil from "./Views/Accueil";
 import GeekPotato from "./Views/GeekPotato";
 import Serenity from "./Views/Serenity";
+import Footer from "./Components/Footer";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                         <Presentation/>
                         <MyProjects/>
                         <Contact/>
+                        <Footer/>
                     </Route>
                     <Route path="/posts">
                         <Posts></Posts>

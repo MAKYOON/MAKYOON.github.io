@@ -6,9 +6,9 @@ function MyProjects() {
     return (
         <section
             id="projects"
-            className="pt-20 bg-color-secondary w-full min-h-screen relative"
+            className="pt-24 bg-color-secondary w-full min-h-screen relative"
         >
-            <h1 className="font-bold text-white text-center p-3 text-3xl mb-16"> PROJETS </h1>
+            <h1 className="font-bold bg-color-primary-2 text-white text-center p-3 text-3xl mb-12"> PROJETS </h1>
             <ProjectCard
                 name="survivalz.png"
                 title="SurvivalZ : Top-down shooter"

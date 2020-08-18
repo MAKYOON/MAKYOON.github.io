@@ -42,10 +42,10 @@ function Contact() {
 
     return (
         <section id="contact"
-                 className="pt-20 color-primary-3 w-full flex flex-col h-screen justify-around bg-color-primary"
+                 className="pt-24 color-primary-3 w-full flex flex-col min-h-screen justify-around bg-color-primary"
         >
             {result && (<p className={`${result.success ? 'success' : 'error'}`}>{result.message}</p>)}
-            <h1  className="font-bold text-center text-3xl"> CONTACT </h1>
+            <h1  className=" font-bold text-3xl text-center w-full bg-color-primary-2 text-white p-3 mb-8"> CONTACT </h1>
             <form className="flex flex-col items-center opacity-100" action="#" method="post" onSubmit={(e) => e.preventDefault()}>
                 <fieldset className="w-4/5">
                     <label htmlFor="name">Nom</label> <span className="text-red-500">*</span>
@@ -120,7 +120,7 @@ function Contact() {
                               ref={register({required: true})}
                     />
                 </fieldset>
-                <button className="bg-color-primary-2 hover:bg-blue-700 text-white font-bold py-3 px-20 rounded text-xl"
+                <button className="bg-color-primary-2 hover:bg-blue-700 text-white font-bold py-3 px-20 rounded text-xl mb-12"
                         type="submit"
                         onClick={handleSubmit(sendEmail)}
                 >

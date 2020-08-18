@@ -23,11 +23,11 @@ function CardOverlay(propts) {
                 <animated.div
                     key={key}
                     style={props}
-                    className="w-full bg-black z-10 h-48 absolute top-0"
+                    className="w-full bg-color-primary z-10 h-48 absolute top-0"
                 >
                     {/*On affiche le titre et un bouton qui contient un lien vers le projet (données récupérées à
                      travers les props*/}
-                    <figcaption className="text-white">
+                    <figcaption className="color-primary-3">
                         <h1 className="absolute pin-top text-center text-lg"> {propts.title} </h1>
                         <Link
                             to={propts.link}
@@ -51,7 +51,7 @@ function CardOverlay(propts) {
                 <animated.div
                     key={key}
                     style={props}
-                    className="w-full bg-black z-10 h-48 absolute top-0"
+                    className="w-full bg-color-primary z-10 h-48 absolute top-0"
                 >
                 </animated.div>
         )
