@@ -6,14 +6,17 @@ import {animated, useTransition} from "react-spring";
 
 function CardOverlay(propts) {
 
+    //Transition qui donne un effet "fade-in"
     const overlayTransition = useTransition(propts.showOverlay, null, {
         from: { position: 'absolute', opacity: 0 },
         enter: { opacity: 1 },
         leave: { opacity: 0 },
     })
 
+    //On récupère l'état à travers les props et on affiche l'overlay si la props est égale à true
     if (propts.showOverlay) {
         return (
+            //On met en place l'animation
             overlayTransition.map (
                 ({item, key, props}) =>
                 item &&
@@ -22,9 +25,8 @@ function CardOverlay(propts) {
                     style={props}
                     className="w-full bg-black z-10 h-48 absolute top-0"
                 >
-                    <div className="hidden w-full min-h-screen bg-black">
-
-                    </div>
+                    {/*On affiche le titre et un bouton qui contient un lien vers le projet (données récupérées à
+                     travers les props*/}
                     <figcaption className="text-white">
                         <h1 className="absolute pin-top text-center text-lg"> {propts.title} </h1>
                         <Link

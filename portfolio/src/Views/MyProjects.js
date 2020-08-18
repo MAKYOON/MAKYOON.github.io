@@ -10,13 +10,13 @@ function MyProjects() {
         >
             <h1 className="font-bold text-white text-center p-3 text-3xl mb-16"> PROJECTS </h1>
             <ProjectCard
-                name="contact.jpg"
-                title="Blog Post (fetch API from JSONPlaceHolder)"
-                link="/posts"
+                name="survivalz.png"
+                title="SurvivalZ : Top-down shooter"
+                link="/projects/survivalz"
             />
             <ProjectCard
-                name="wood-bg.jpg"
-                title="Filler"
+                name="geekpotato.png"
+                title="Geek Potato Project : GGJ 2020"
                 link="/posts"
             />
             <ProjectCard
