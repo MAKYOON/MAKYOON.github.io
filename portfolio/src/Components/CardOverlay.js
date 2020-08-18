@@ -32,6 +32,7 @@ function CardOverlay(propts) {
                         <Link
                             to={propts.link}
                             className="absolute pin-bottom border-button px-5 py-1 rounded-full text-xl"
+                            target="_blank"
                         >
                             Voir plus
                             <FontAwesomeIcon className="ml-2 pt-1" icon={faAngleRight}/>

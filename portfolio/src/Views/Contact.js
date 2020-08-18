@@ -41,7 +41,7 @@ function Contact() {
     };
 
     return (
-        <section style={{backgroundImage: `url(${require("../Assets/wood-bg.jpg")}` , backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
+        <section style={{backgroundImage: `url(${require("../Assets/contact.jpg")}` , backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
                  id="contact"
                  className="pt-20 text-white w-full flex flex-col h-screen justify-around"
         >
@@ -50,10 +50,16 @@ function Contact() {
             <form className="flex flex-col items-center opacity-100" action="#" method="post" onSubmit={(e) => e.preventDefault()}>
                 <fieldset className="w-4/5">
                     <label htmlFor="name">Nom</label> <span className="text-red-500">*</span>
-                    {errors.name && (<div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"> Ce champ est obligatoire </div>)}
+                    {errors.name && (
+                        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
+                            Ce champ est obligatoire
+                        </div>
+                    )
+                    }
                     <br/>
                     <input id="name"
-                           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-3"
+                           className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight
+                           focus:outline-none focus:shadow-outline mb-3 color-primary"
                            type="text"
                            name="name"
                            onChange={onInputChange}
@@ -62,10 +68,16 @@ function Contact() {
                     />
                 </fieldset>
                 <fieldset className="w-4/5">
-                    {errors.email && (<div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"> Ce champ est obligatoire </div>)}
+                    {errors.email && (
+                        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
+                        Ce champ est obligatoire
+                        </div>
+                    )
+                    }
                     <label htmlFor="email">Email</label> <span className="text-red-500">*</span>
                     <input id="email"
-                           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-3"
+                           className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight
+                           focus:outline-none focus:shadow-outline mb-3 color-primary"
                            type="email"
                            name="email"
                            onChange={onInputChange}
@@ -74,10 +86,16 @@ function Contact() {
                     />
                 </fieldset>
                 <fieldset className="w-4/5">
-                    {errors.subject && (<div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"> Ce champ est obligatoire </div>)}
+                    {errors.subject && (
+                        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
+                            Ce champ est obligatoire
+                        </div>
+                    )
+                    }
                     <label htmlFor="subject">Objet</label> <span className="text-red-500">*</span>
                     <input id="subject"
-                              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-3"
+                              className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight
+                              focus:outline-none focus:shadow-outline mb-3 color-primary"
                               type="text"
                               name="subject"
                               onChange={onInputChange}
@@ -86,10 +104,16 @@ function Contact() {
                     />
                 </fieldset>
                 <fieldset className="w-4/5 pb-20">
-                    {errors.message && (<div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"> Ce champ est obligatoire </div>)}
+                    {errors.message && (
+                        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
+                            Ce champ est obligatoire
+                        </div>
+                    )
+                    }
                     <label htmlFor="message">Message</label> <span className="text-red-500">*</span>
                     <textarea id="message"
-                              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-3"
+                              className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight
+                              focus:outline-none focus:shadow-outline mb-3 color-primary"
                               type="text"
                               name="message"
                               onChange={onInputChange}
@@ -97,7 +121,7 @@ function Contact() {
                               ref={register({required: true})}
                     />
                 </fieldset>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-20 rounded text-xl"
+                <button className="color-secondary hover:bg-blue-700 text-white font-bold py-3 px-20 rounded text-xl"
                         type="submit"
                         onClick={handleSubmit(sendEmail)}
                 >
@@ -110,9 +134,9 @@ function Contact() {
                         icon={faAt}
                     />
                     <a href="mailto:li.kevin.contact@gmail.com"
-                       className="p-3 text-blue-500">li.kevin.contact@gmail.com</a>
+                       className="p-3 text-blue-500 font-bold">li.kevin.contact@gmail.com</a>
                 </div>
-                <div id="mobile-contact" className="text-center">
+                <div id="mobile-contact" className="text-center font-bold">
                     <FontAwesomeIcon
                         icon={faMobile}
                     />

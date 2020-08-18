@@ -15,6 +15,15 @@ function SurvivalZ(props)
 				le plus longtemps possible. C'est un jeu que j'ai créer dans le cadre de mon cursus à Ludus Académie, afin
 				de consolider mes acquis sur Unity.
 			</p>
+			<br/>
+			<h1 className="text-xl font-bold">Contrôles</h1>
+			<br/>
+			<p>
+				Déplacements : Z,Q,S,D <br/>
+				Tir : Clic Gauche <br/>
+				Recharger : R
+			</p>
+			<br/>
 			<iframe
 				src="https://i.simmer.io/@MAKYOON/survivalz"
 				className="w-full h-screen"

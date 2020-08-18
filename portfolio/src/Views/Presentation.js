@@ -3,7 +3,7 @@ import {animated, useTransition} from "react-spring";
 import {Link} from "react-scroll";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPaperPlane} from "@fortawesome/free-solid-svg-icons";
-import {faEye} from "@fortawesome/free-solid-svg-icons";
+import {faFileDownload} from "@fortawesome/free-solid-svg-icons";
 
 function Presentation() {
 
@@ -26,7 +26,6 @@ function Presentation() {
                     <h1 className="font-bold text-3xl"> PRESENTATION </h1>
                     <div>
                         <img className="rounded-full h-32 w-32" src={require("../Assets/photo.jpg")} alt="Photo de profil"/>
-                        <p className="text-center text-bold text-xl pt-3">LI Kevin</p>
                     </div>
                     <div className="pl-3">
                         <p>
@@ -57,8 +56,8 @@ function Presentation() {
                         <a href={require("../Assets/CV_LI_Kevin.pdf")} download
                            className="color-secondary cursor-pointer text-white font-bold py-2 px-5 rounded text-xl"
                         >
-                            <FontAwesomeIcon className="mr-5" icon={faEye}/>
-                            Consultez mon CV
+                            <FontAwesomeIcon className="mr-5" icon={faFileDownload}/>
+                            Téléchargez mon CV
                         </a>
                     </div>
                 </animated.div>)

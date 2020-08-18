@@ -8,7 +8,7 @@ function MyProjects() {
             id="projects"
             className="pt-20 color-primary-2 w-full min-h-screen"
         >
-            <h1 className="font-bold text-white text-center p-3 text-3xl mb-16"> PROJECTS </h1>
+            <h1 className="font-bold text-white text-center p-3 text-3xl mb-16"> PROJETS </h1>
             <ProjectCard
                 name="survivalz.png"
                 title="SurvivalZ : Top-down shooter"
@@ -17,12 +17,12 @@ function MyProjects() {
             <ProjectCard
                 name="geekpotato.png"
                 title="Geek Potato Project : GGJ 2020"
-                link="/posts"
+                link="/projects/geekpotato"
             />
             <ProjectCard
-                name="wood-bg.jpg"
-                title="Filler"
-                link="/posts"
+                name="serenity.png"
+                title="Serenity : prototype de jeu anti-stress"
+                link="/projects/serenity"
             />
             <ProjectCard
                 name="wood-bg.jpg"

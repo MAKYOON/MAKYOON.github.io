@@ -4,25 +4,23 @@ import {Link} from 'react-scroll';
 function NavigationMenu(props) {
 
     return (
-        <div>
-            <div
-                className="font-bold"
-            >
-                Menu
-            </div>
-            <ul>
-                <li>
+        <div className="h-full">
+            <ul className="flex flex-col text-lg justify-center items-center h-full">
+                <li className="py-3 border-b-2">
                     <Link
-                        to="/"
-                        className="py-3 border-t border-b block"
+                        to="accueil"
                         onClick={props.closeMenu}
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                        activeClass="active"
                     >
                         Accueil
                     </Link>
                 </li>
-                <li>
+                <li className="py-3 border-b-2">
                     <Link
-                        className="py-3 border-t border-b block"
                         onClick={props.closeMenu}
                         activeClass="active"
                         to="presentation"
@@ -34,9 +32,8 @@ function NavigationMenu(props) {
                         Présentation
                     </Link>
                 </li>
-                <li>
+                <li className="py-3 border-b-2">
                     <Link
-                        className="py-3 border-t border-b block"
                         onClick={props.closeMenu}
                         activeClass="active"
                         to="projects"
@@ -48,9 +45,8 @@ function NavigationMenu(props) {
                         My Projects
                     </Link>
                 </li>
-                <li>
+                <li className="py-3 border-b-2">
                     <Link
-                        className="py-3 border-t border-b block"
                         onClick={props.closeMenu}
                         activeClass="active"
                         to="contact"

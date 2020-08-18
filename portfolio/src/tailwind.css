@@ -14372,15 +14372,9 @@ video {
 }
 
 .active {
-  display: inline-block;
-  border-left-width: 1px;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
   padding: 0.5rem 1rem;
-  color: #2b6cb0;
-  font-weight: 600;
+  color: white;
+  font-weight: 900;
 }
 
 .success {
@@ -14441,6 +14435,22 @@ video {
   bottom: 20%;
   left: 50%;
   transform: translate(-50%, 20%);
+}
+
+.pin-top-left {
+  top: 10%;
+  left: 20%;
+  transform: translate(-20%, -10%);
+}
+
+.color-linkedin {
+  color: #007dbb;
+}
+
+.pin-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 @media (min-width: 640px) {
