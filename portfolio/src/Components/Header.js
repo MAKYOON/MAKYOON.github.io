@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 
 function Header() {
     return (
-        <header className="p-3 flex justify-between items-center color-secondary text-white fixed w-full z-50">
-            <Link to="/" className="font-bold">
+        <header className="p-5 flex justify-between items-center bg-color-primary-2 text-white fixed w-full z-50">
+            <Link to="/" className="font-bold text-xl text-white">
                 LI Kevin
             </Link>
             <NavigationBar/>

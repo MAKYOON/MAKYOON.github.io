@@ -61,16 +61,24 @@
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%, 0 53%);
 }
 
+.bg-color-primary {
+    background-color: #E3E2DF;
+}
+
+.bg-color-primary-2 {
+    background-color: #5D001E;
+}
+
 .color-primary {
-    background-color: #385668;
+    color : #E3E2DF;
 }
 
-.color-primary-2 {
-    background-color: #414571;
+.color-primary-3 {
+    color: #9A1750;
 }
 
-.color-secondary {
-    background-color: #A36A53;
+.bg-color-secondary {
+    background-color: #919192;
 }
 
 .border-button {

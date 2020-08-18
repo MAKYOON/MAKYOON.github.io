@@ -6,7 +6,7 @@ function MyProjects() {
     return (
         <section
             id="projects"
-            className="pt-20 color-primary-2 w-full min-h-screen"
+            className="pt-20 bg-color-secondary w-full min-h-screen relative"
         >
             <h1 className="font-bold text-white text-center p-3 text-3xl mb-16"> PROJETS </h1>
             <ProjectCard

@@ -12,7 +12,7 @@ import Serenity from "./Views/Serenity";
 
 function App() {
     return (
-        <div className="App relative min-h-screen">
+        <div className="App relative min-h-screen font-serif">
             <Router>
                 <Switch>
                     <Route exact path="/">

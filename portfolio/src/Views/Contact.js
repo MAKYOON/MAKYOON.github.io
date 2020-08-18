@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faMobile} from "@fortawesome/free-solid-svg-icons";
-import {faAt} from "@fortawesome/free-solid-svg-icons";
+import {faMobileAlt} from "@fortawesome/free-solid-svg-icons";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import axios from 'axios';
 import {useForm} from "react-hook-form";
 
@@ -41,9 +41,8 @@ function Contact() {
     };
 
     return (
-        <section style={{backgroundImage: `url(${require("../Assets/contact.jpg")}` , backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
-                 id="contact"
-                 className="pt-20 text-white w-full flex flex-col h-screen justify-around"
+        <section id="contact"
+                 className="pt-20 color-primary-3 w-full flex flex-col h-screen justify-around bg-color-primary"
         >
             {result && (<p className={`${result.success ? 'success' : 'error'}`}>{result.message}</p>)}
             <h1  className="font-bold text-center text-3xl"> CONTACT </h1>
@@ -121,7 +120,7 @@ function Contact() {
                               ref={register({required: true})}
                     />
                 </fieldset>
-                <button className="color-secondary hover:bg-blue-700 text-white font-bold py-3 px-20 rounded text-xl"
+                <button className="bg-color-primary-2 hover:bg-blue-700 text-white font-bold py-3 px-20 rounded text-xl"
                         type="submit"
                         onClick={handleSubmit(sendEmail)}
                 >
@@ -131,14 +130,15 @@ function Contact() {
             <div className="text-xl self-center">
                 <div id="mail-contact">
                     <FontAwesomeIcon
-                        icon={faAt}
+                        icon={faEnvelope}
+                        className="color-primary-3"
                     />
                     <a href="mailto:li.kevin.contact@gmail.com"
-                       className="p-3 text-blue-500 font-bold">li.kevin.contact@gmail.com</a>
+                       className="p-3 color-primary-3">li.kevin.contact@gmail.com</a>
                 </div>
-                <div id="mobile-contact" className="text-center font-bold">
+                <div id="mobile-contact" className="text-center">
                     <FontAwesomeIcon
-                        icon={faMobile}
+                        icon={faMobileAlt}
                     />
                     <span className="p-3">06 76 33 01 70</span>
                 </div>

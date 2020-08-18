@@ -14,7 +14,7 @@ function Presentation() {
     })
 
     return (
-        <section id="presentation" className="pt-20 color-primary text-white">
+        <section id="presentation" className="pt-20 bg-color-primary text-black">
         {
             displayTransition.map(({ item, key, props }) =>
                 item &&
@@ -23,16 +23,16 @@ function Presentation() {
                     style={props}
                     className="flex flex-col items-center justify-around w-full min-h-screen"
                 >
-                    <h1 className="font-bold text-3xl"> PRESENTATION </h1>
+                    <h1 className="font-bold text-3xl color-primary-3"> PRESENTATION </h1>
                     <div>
                         <img className="rounded-full h-32 w-32" src={require("../Assets/photo.jpg")} alt="Photo de profil"/>
                     </div>
                     <div className="pl-3">
                         <p>
-                            Diplômé d'un <strong> Foundation Degree Jeux Vidéo et Serious Games </strong>, j'ai décidé
+                            Diplômé d'un <strong className="color-primary-3"> Foundation Degree Jeux Vidéo et Serious Games </strong>, j'ai décidé
                             de continuer mes études dans le domaine du développement web. Ainsi, je prépare actuellement
-                            une <strong> Licence Pro : Développement Web, Communication et Apprentissages </strong> à
-                            la Faculté de Strasbourg, en alternance au sein de la startup <strong>AirCampus </strong>.
+                            une <strong className="color-primary-3"> Licence Pro : Développement Web, Communication et Apprentissages </strong> à
+                            la Faculté de Strasbourg, en alternance au sein de la startup <strong className="color-primary-3">AirCampus </strong>.
                         </p>
                         <br/>
                         <p>
@@ -42,7 +42,7 @@ function Presentation() {
                     </div>
                     <div className="flex flex-col space-y-5">
                         <Link
-                            className="color-secondary cursor-pointer text-white font-bold py-2 px-5 rounded text-xl"
+                            className="bg-color-primary-2 cursor-pointer text-white font-bold py-2 px-5 rounded text-xl"
                             activeClass="active"
                             to="contact"
                             spy={true}
@@ -54,7 +54,7 @@ function Presentation() {
                             Me contacter
                         </Link>
                         <a href={require("../Assets/CV_LI_Kevin.pdf")} download
-                           className="color-secondary cursor-pointer text-white font-bold py-2 px-5 rounded text-xl"
+                           className="bg-color-primary-2 cursor-pointer text-white font-bold py-2 px-5 rounded text-xl"
                         >
                             <FontAwesomeIcon className="mr-5" icon={faFileDownload}/>
                             Téléchargez mon CV

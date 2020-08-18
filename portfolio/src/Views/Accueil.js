@@ -15,7 +15,7 @@ function Accueil() {
                      className="w-full h-screen object-cover"
                 />
                 <figcaption
-                    className="absolute pin-center text-center text-4xl font-bold w-full font-sans pt-2 text-white"
+                    className="absolute pin-center text-center text-4xl font-bold w-full pt-2 text-white"
                 >
                     <p>PORTFOLIO</p>
                     <p>LI Kevin</p>
