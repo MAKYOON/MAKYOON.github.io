@@ -7,7 +7,7 @@ import {animated, useTransition} from "react-spring";
 function CardOverlay(propts) {
 
 
-    const maskTransitions = useTransition(propts.showOverlay, null, {
+    const overlayTransition = useTransition(propts.showOverlay, null, {
         from: { position: 'absolute', opacity: 0 },
         enter: { opacity: 1 },
         leave: { opacity: 0 },
@@ -15,13 +15,14 @@ function CardOverlay(propts) {
 
     if (propts.showOverlay) {
         return (
-            maskTransitions.map(({item, key, props}) =>
+            overlayTransition.map (
+                ({item, key, props}) =>
                 item &&
                 <animated.div
                     key={key}
                     style={props}
                     className="w-full bg-black z-10 h-48 absolute top-0"
-                >️
+                >
                     <figcaption className="text-white">
                         <h1 className="absolute pin-top text-center text-lg"> {propts.title} </h1>
                         <Link
@@ -38,7 +39,16 @@ function CardOverlay(propts) {
     }
 
     return (
-        <div></div>
+        overlayTransition.map (
+            ({item, key, props}) =>
+                item &&
+                <animated.div
+                    key={key}
+                    style={props}
+                    className="w-full bg-black z-10 h-48 absolute top-0"
+                >
+                </animated.div>
+        )
     );
 }
 
