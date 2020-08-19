@@ -9,8 +9,8 @@ function Serenity()
 			>
 				Serenity
 			</h1>
-			<p className="pt-5">
-				Serenity est un prototype de jeu anti-stress réalisé dans le cadre d'un examen au cours de mon cursus à Ludus
+			<p className="pt-5 px-20">
+				Serenity est un prototype de jeu anti-stress réalisé sous Unity dans le cadre d'un examen au cours de mon cursus à Ludus
 				Académie. Le but était de réaliser un prototype de jeu permettant d'évaluer la réduction du stress au sein
 				d'une entreprise. <br/>
 				Serenity plonge le joueur dans un monde virtuel paisible et calme, où il est amené à se concentrer sur des

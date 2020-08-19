@@ -9,8 +9,8 @@ function GeekPotato()
 			>
 				Geek Potato
 			</h1>
-			<p className="pt-5">
-				GeekPotato est un prototype de jeu qui a été réalisé au cours de la Global Game Jam 2020. Le thème était "Réparer" : ainsi,
+			<p className="pt-5 px-20">
+				GeekPotato est un prototype de jeu qui a été réalisé sous Unity au cours de la Global Game Jam 2020. Le thème était "Réparer" : ainsi,
 				dans ce jeu, nous proposons au joueur d'incarner un robot surpuissant qui s'est malheureusement détruit, et cherche
 				à se réparer au fil du jeu. Nous avons décidé de le réaliser sous un jeu de plateforme classique.
 				<br/>

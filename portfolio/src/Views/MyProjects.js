@@ -24,11 +24,6 @@ function MyProjects() {
                 title="Serenity : prototype de jeu anti-stress"
                 link="/projects/serenity"
             />
-            <ProjectCard
-                name="wood-bg.jpg"
-                title="Filler"
-                link="/posts"
-            />
         </section>
     );
 }
