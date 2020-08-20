@@ -7,10 +7,10 @@ function MyProjects() {
     return (
         <section
             id="projects"
-            className="pt-24 md:pt-40 bg-color-primary w-full min-h-screen relative pb-4"
+            className="pt-24 md:pt-40 lg:pt-48 bg-color-primary w-full min-h-screen relative pb-4"
         >
             <Fade cascade triggerOnce>
-                <h1 className="font-bold bg-color-primary-2 text-white text-center p-3 md:p-5 text-3xl md:text-5xl mb-12"> PROJETS </h1>
+                <h1 className="font-bold bg-color-primary-2 text-white text-center p-3 md:p-5 text-3xl md:text-5xl lg:text-6xl mb-12"> PROJETS </h1>
                 <ProjectCard
                     name="portfolio.png"
                     title="Portfolio"

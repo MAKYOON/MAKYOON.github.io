@@ -19,10 +19,10 @@ function ProjectCard(props) {
                 onOutsideClick={() => setShowOverlay(false)}
             >
                 {/*Titre du projet*/}
-                <h1 className="text-center text-white color-primary-3 text-2xl md:text-4xl">{props.title}</h1>
+                <h1 className="text-center text-white color-primary-3 text-2xl md:text-4xl lg:text-5xl">{props.title}</h1>
                 {/*Image représentant le projet*/}
                 <figure className="relative">
-                    <img className="rounded-md w-full h-48 md:h-80"
+                    <img className="rounded-md w-full h-48 md:h-80 lg:h-112"
                          src={require(`../Assets/${props.name}`)}
                          alt="Projet"
                     />

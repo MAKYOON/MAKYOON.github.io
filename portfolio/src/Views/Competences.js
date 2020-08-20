@@ -16,18 +16,18 @@ function Competences()
 		>
 			<Fade cascade triggerOnce>
 				<h1
-					className="font-bold text-3xl md:text-5xl text-center w-full bg-color-primary-2 text-white p-3 md:p-5"
+					className="font-bold text-3xl md:text-5xl lg:text-6xl text-center w-full bg-color-primary-2 text-white p-3 md:p-5 lg:p-8"
 				>
 					COMPÉTENCES
 				</h1>
 				<div className="pt-20"
 					 id="langages"
 				>
-					<h2 className="ml-5 color-primary-3 text-2xl md:text-5xl mb-8 "
+					<h2 className="ml-5 color-primary-3 text-2xl md:text-5xl lg:text-6xl mb-8 "
 					>
 						<FontAwesomeIcon
 							icon={faCode}
-							className="mr-2"
+							className="mr-3"
 						/>
 							Langages
 					</h2>
@@ -39,12 +39,6 @@ function Competences()
 							name="CSS/SASS"
 						/>
 						<SkillComponent
-							name="C"
-						/>
-						<SkillComponent
-							name="C#"
-						/>
-						<SkillComponent
 							name="JavaScript"
 						/>
 						<SkillComponent
@@ -53,27 +47,33 @@ function Competences()
 						<SkillComponent
 							name="MySQL"
 						/>
+						<SkillComponent
+							name="C#"
+						/>
+						<SkillComponent
+							name="C"
+						/>
 					</div>
 				</div>
 				<div className="pt-20"
 					 id="outils"
 				>
-					<h2 className="ml-5 color-primary-3 text-2xl md:text-5xl mb-8 ">
+					<h2 className="ml-5 color-primary-3 text-2xl md:text-5xl lg:text-6xl  mb-8 ">
 						<FontAwesomeIcon
 							icon={faToolbox}
-							className="mr-2"
+							className="mr-3"
 						/>
 						Outils et frameworks
 					</h2>
 					<div className="ml-5 flex flex-wrap mb-8">
 						<SkillComponent
-							name="ReactJS"
-						/>
-						<SkillComponent
-							name="Bootstrap"
+							name="React"
 						/>
 						<SkillComponent
 							name="Tailwind CSS"
+						/>
+						<SkillComponent
+							name="Bootstrap"
 						/>
 						<SkillComponent
 							name="Github"

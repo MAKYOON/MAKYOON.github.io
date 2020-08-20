@@ -16,19 +16,19 @@ function Accueil() {
                      className="w-full h-screen object-cover"
                 />
                 <figcaption
-                    className="absolute pin-center text-center text-4xl font-bold w-full pt-2 text-white md:text-5xl"
+                    className="absolute pin-center text-center text-4xl font-bold w-full pt-2 text-white md:text-5xl lg:text-6xl"
                 >
                     <p>PORTFOLIO</p>
                     <p>LI Kevin</p>
                 </figcaption>
             </figure>
-            <div className="absolute pin-bottom flex">
+            <div className="absolute pin-bottom-20 flex">
                 <Fade triggerOnce cascade>
                     <div className="mx-3">
                         <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/kevin-li-340814194/">
                             <FontAwesomeIcon
                                 icon={faLinkedin}
-                                className="text-6xl color-linkedin md:text-8xl"
+                                className="text-6xl color-linkedin md:text-8xl lg:text-9xl"
                             />
                         </a>
                     </div>
@@ -36,7 +36,7 @@ function Accueil() {
                         <a rel="noopener noreferrer" target="_blank" href="https://github.com/MAKYOON">
                             <FontAwesomeIcon
                                 icon={faGithubSquare}
-                                className="text-6xl text-white  md:text-8xl"
+                                className="text-6xl md:text-8xl lg:text-9xl"
                             />
                         </a>
                     </div>

@@ -5,7 +5,7 @@ function NavigationMenu(props) {
 
     return (
         <div className="h-full">
-            <ul className="flex flex-col text-xl md:text-3xl justify-center items-center h-full">
+            <ul className="flex flex-col text-xl md:text-3xl lg:text-4xl justify-center items-center h-full">
                 <li className="py-3 border-b-2">
                     <Link
                         to="accueil"

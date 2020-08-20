@@ -20,7 +20,7 @@ function NavigationBar(props) {
 
     return (
         <nav>
-            <span className="text-xl cursor-pointer md:text-3xl">
+            <span className="text-xl cursor-pointer md:text-4xl lg:text-5xl">
                 <FontAwesomeIcon
                     icon={faBars}
                     onClick={() => setShowMenu(!showMenu)}

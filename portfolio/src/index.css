@@ -111,6 +111,12 @@
     transform: translate(-50%, 20%);
 }
 
+.pin-bottom-20 {
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+}
+
 .pin-top-left {
     top: 10%;
     left: 20%;
