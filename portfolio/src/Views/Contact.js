@@ -42,11 +42,11 @@ function Contact() {
 
     return (
         <section id="contact"
-                 className="pt-24 color-primary-3 w-full flex flex-col min-h-screen justify-around bg-color-primary"
+                 className="pt-24 md:pt-40 color-primary-3 w-full flex flex-col min-h-screen justify-around bg-color-secondary pb-4"
         >
             {result && (<p className={`${result.success ? 'success' : 'error'}`}>{result.message}</p>)}
-            <h1  className=" font-bold text-3xl text-center w-full bg-color-primary-2 text-white p-3 mb-8"> CONTACT </h1>
-            <form className="flex flex-col items-center opacity-100" action="#" method="post" onSubmit={(e) => e.preventDefault()}>
+            <h1  className=" font-bold text-3xl md:text-5xl text-center w-full bg-color-primary-2 text-white p-3 md:p-5 mb-8 md:mb-12"> CONTACT </h1>
+            <form className="flex flex-col items-center text-lg md:text-3xl" action="#" method="post" onSubmit={(e) => e.preventDefault()}>
                 <fieldset className="w-4/5">
                     <label htmlFor="name">Nom</label> <span className="text-red-500">*</span>
                     {errors.name && (
@@ -57,8 +57,8 @@ function Contact() {
                     }
                     <br/>
                     <input id="name"
-                           className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight
-                           focus:outline-none focus:shadow-outline mb-3 color-primary"
+                           className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight
+                           focus:outline-none focus:shadow-outline mb-3"
                            type="text"
                            name="name"
                            onChange={onInputChange}
@@ -75,8 +75,8 @@ function Contact() {
                     }
                     <label htmlFor="email">Email</label> <span className="text-red-500">*</span>
                     <input id="email"
-                           className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight
-                           focus:outline-none focus:shadow-outline mb-3 color-primary"
+                           className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight
+                           focus:outline-none focus:shadow-outline mb-3"
                            type="email"
                            name="email"
                            onChange={onInputChange}
@@ -93,8 +93,8 @@ function Contact() {
                     }
                     <label htmlFor="subject">Objet</label> <span className="text-red-500">*</span>
                     <input id="subject"
-                              className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight
-                              focus:outline-none focus:shadow-outline mb-3 color-primary"
+                              className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight
+                              focus:outline-none focus:shadow-outline mb-3"
                               type="text"
                               name="subject"
                               onChange={onInputChange}
@@ -111,8 +111,8 @@ function Contact() {
                     }
                     <label htmlFor="message">Message</label> <span className="text-red-500">*</span>
                     <textarea id="message"
-                              className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight
-                              focus:outline-none focus:shadow-outline mb-3 color-primary"
+                              className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight
+                              focus:outline-none focus:shadow-outline mb-3 md:h-40 h-32"
                               type="text"
                               name="message"
                               onChange={onInputChange}
@@ -120,14 +120,14 @@ function Contact() {
                               ref={register({required: true})}
                     />
                 </fieldset>
-                <button className="bg-color-primary-2 hover:bg-blue-700 text-white font-bold py-3 px-20 rounded text-xl mb-12"
+                <button className="bg-color-primary-2 hover:bg-blue-700 text-white font-bold py-3 px-20 rounded text-xl md:text-3xl mb-12"
                         type="submit"
                         onClick={handleSubmit(sendEmail)}
                 >
                         Envoyer
                 </button>
             </form>
-            <div className="text-xl self-center">
+            <div className="text-xl self-center md:text-4xl">
                 <div id="mail-contact">
                     <FontAwesomeIcon
                         icon={faEnvelope}

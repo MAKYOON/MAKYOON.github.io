@@ -25,6 +25,7 @@ function SurvivalZ()
 			</p>
 			<br/>
 			<iframe
+				title="SurvivalZ"
 				src="https://i.simmer.io/@MAKYOON/survivalz"
 				className="w-full h-screen"
 			>

@@ -5,7 +5,7 @@ function NavigationMenu(props) {
 
     return (
         <div className="h-full">
-            <ul className="flex flex-col text-xl justify-center items-center h-full">
+            <ul className="flex flex-col text-xl md:text-3xl justify-center items-center h-full">
                 <li className="py-3 border-b-2">
                     <Link
                         to="accueil"
@@ -36,6 +36,19 @@ function NavigationMenu(props) {
                     <Link
                         onClick={props.closeMenu}
                         activeClass="active"
+                        to="competences"
+                        spy={true}
+                        smooth={true}
+                        offset={40}
+                        duration={500}
+                    >
+                        Compétences
+                    </Link>
+                </li>
+                <li className="py-3 border-b-2">
+                    <Link
+                        onClick={props.closeMenu}
+                        activeClass="active"
                         to="projects"
                         spy={true}
                         smooth={true}
@@ -52,7 +65,7 @@ function NavigationMenu(props) {
                         to="contact"
                         spy={true}
                         smooth={true}
-                        offset={40}
+                        offset={45}
                         duration={500}
                     >
                         Contact

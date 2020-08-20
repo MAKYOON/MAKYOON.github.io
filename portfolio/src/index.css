@@ -69,6 +69,14 @@
     background-color: #5D001E;
 }
 
+.bg-color-primary-3 {
+    background-color: #EE4C7C;
+}
+
+.bg-color-primary-opacity-90 {
+    background-color: rgba(227,226,223,0.90);
+}
+
 .color-primary {
     color : #E3E2DF;
 }
@@ -82,11 +90,11 @@
 }
 
 .bg-color-secondary {
-    background-color: #909192;
+    background-color: #BAB8B2;
 }
 
 .border-button {
-    border : 1px solid #A38E53;
+    border : 1px solid #9A1750;
 }
 
 
@@ -98,7 +106,7 @@
 }
 
 .pin-bottom {
-    bottom: 20%;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, 20%);
 }
@@ -110,7 +118,7 @@
 }
 
 .color-linkedin {
-    color: #007dbb;
+    color: #1293D2;
 }
 
 .pin-center {

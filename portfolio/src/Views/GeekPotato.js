@@ -28,6 +28,7 @@ function GeekPotato()
 			<br/>
 
 			<iframe
+				title="GeekPotato"
 				src="https://i.simmer.io/@MAKYOON/geekpotato"
 				className="w-full h-screen"
 			>

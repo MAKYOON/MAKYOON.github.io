@@ -10,6 +10,7 @@ import Accueil from "./Views/Accueil";
 import GeekPotato from "./Views/GeekPotato";
 import Serenity from "./Views/Serenity";
 import Footer from "./Components/Footer";
+import Competences from "./Views/Competences";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                         <Header/>
                         <Accueil/>
                         <Presentation/>
+                        <Competences/>
                         <MyProjects/>
                         <Contact/>
                         <Footer/>

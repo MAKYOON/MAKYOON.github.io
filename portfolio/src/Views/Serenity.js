@@ -29,6 +29,7 @@ function Serenity()
 			</p>
 			<br/>
 			<iframe
+				title="Serenity"
 				src="https://i.simmer.io/@MAKYOON/serenity"
 				className="w-full h-screen"
 			>
