@@ -52,7 +52,7 @@ function NavigationMenu(props) {
                         to="competences"
                         spy={true}
                         smooth={true}
-                        offset={40}
+                        offset={50}
                         duration={300}
                     >
                         Compétences

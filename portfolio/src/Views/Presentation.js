@@ -4,6 +4,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPaperPlane} from "@fortawesome/free-solid-svg-icons";
 import {faFileDownload} from "@fortawesome/free-solid-svg-icons";
 import {Slide} from "react-awesome-reveal";
+import {faUserCircle} from "@fortawesome/free-solid-svg-icons";
+
 
 function Presentation() {
 
@@ -25,6 +27,10 @@ function Presentation() {
                     lg:text-6xl lg:p-8
                     xl:text-4xl xl:p-3 xl:col-span-2"
                     >
+                        <FontAwesomeIcon
+                            icon={faUserCircle}
+                            className="mr-3"
+                        />
                         PRESENTATION </h1>
                     <div
                         className="xl:row-start-1 xl:row-span-3 xl:m-auto "

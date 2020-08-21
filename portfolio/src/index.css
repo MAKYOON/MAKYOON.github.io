@@ -81,6 +81,11 @@
     .justify-self-center {
         justify-self: center;
     }
+
+    .justify-self-end {
+        justify-self: end;
+    }
+
     @variants hover {
         .bg-color-primary {
             background-color: #E3E2DF;
@@ -113,6 +118,17 @@
         .bg-color-secondary {
             background-color: #BAB8B2;
         }
+
+        .flip-vertical-right {
+            -webkit-animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        }
+
+        .flip-diagonal-1-tr {
+            -webkit-animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
+            animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
+        }
+
     }
 }
 

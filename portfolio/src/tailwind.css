@@ -14463,6 +14463,10 @@ video {
   justify-self: center;
 }
 
+.justify-self-end {
+  justify-self: end;
+}
+
 .bg-color-primary {
   background-color: #E3E2DF;
 }
@@ -14495,6 +14499,18 @@ video {
   background-color: #BAB8B2;
 }
 
+.flip-vertical-right {
+  animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.flip-diagonal-1-tr {
+  animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
+}
+
+.spin-diagonal {
+  animation: spin 2s linear infinite;
+}
+
 .hover\:bg-color-primary:hover {
   background-color: #E3E2DF;
 }
@@ -14525,6 +14541,18 @@ video {
 
 .hover\:bg-color-secondary:hover {
   background-color: #BAB8B2;
+}
+
+.hover\:flip-vertical-right:hover {
+  animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.hover\:flip-diagonal-1-tr:hover {
+  animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
+}
+
+.hover\:spin-diagonal:hover {
+  animation: spin 2s linear infinite;
 }
 
 .border-button {
@@ -28406,6 +28434,10 @@ video {
     justify-self: center;
   }
 
+  .sm\:justify-self-end {
+    justify-self: end;
+  }
+
   .sm\:bg-color-primary {
     background-color: #E3E2DF;
   }
@@ -28438,6 +28470,18 @@ video {
     background-color: #BAB8B2;
   }
 
+  .sm\:flip-vertical-right {
+    animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+
+  .sm\:flip-diagonal-1-tr {
+    animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
+  }
+
+  .sm\:spin-diagonal {
+    animation: spin 2s linear infinite;
+  }
+
   .sm\:hover\:bg-color-primary:hover {
     background-color: #E3E2DF;
   }
@@ -28468,6 +28512,18 @@ video {
 
   .sm\:hover\:bg-color-secondary:hover {
     background-color: #BAB8B2;
+  }
+
+  .sm\:hover\:flip-vertical-right:hover {
+    animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+
+  .sm\:hover\:flip-diagonal-1-tr:hover {
+    animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
+  }
+
+  .sm\:hover\:spin-diagonal:hover {
+    animation: spin 2s linear infinite;
   }
 }
 
@@ -42297,6 +42353,10 @@ video {
     justify-self: center;
   }
 
+  .md\:justify-self-end {
+    justify-self: end;
+  }
+
   .md\:bg-color-primary {
     background-color: #E3E2DF;
   }
@@ -42329,6 +42389,18 @@ video {
     background-color: #BAB8B2;
   }
 
+  .md\:flip-vertical-right {
+    animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+
+  .md\:flip-diagonal-1-tr {
+    animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
+  }
+
+  .md\:spin-diagonal {
+    animation: spin 2s linear infinite;
+  }
+
   .md\:hover\:bg-color-primary:hover {
     background-color: #E3E2DF;
   }
@@ -42359,6 +42431,18 @@ video {
 
   .md\:hover\:bg-color-secondary:hover {
     background-color: #BAB8B2;
+  }
+
+  .md\:hover\:flip-vertical-right:hover {
+    animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+
+  .md\:hover\:flip-diagonal-1-tr:hover {
+    animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
+  }
+
+  .md\:hover\:spin-diagonal:hover {
+    animation: spin 2s linear infinite;
   }
 }
 
@@ -56188,6 +56272,10 @@ video {
     justify-self: center;
   }
 
+  .lg\:justify-self-end {
+    justify-self: end;
+  }
+
   .lg\:bg-color-primary {
     background-color: #E3E2DF;
   }
@@ -56220,6 +56308,18 @@ video {
     background-color: #BAB8B2;
   }
 
+  .lg\:flip-vertical-right {
+    animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+
+  .lg\:flip-diagonal-1-tr {
+    animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
+  }
+
+  .lg\:spin-diagonal {
+    animation: spin 2s linear infinite;
+  }
+
   .lg\:hover\:bg-color-primary:hover {
     background-color: #E3E2DF;
   }
@@ -56250,6 +56350,18 @@ video {
 
   .lg\:hover\:bg-color-secondary:hover {
     background-color: #BAB8B2;
+  }
+
+  .lg\:hover\:flip-vertical-right:hover {
+    animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+
+  .lg\:hover\:flip-diagonal-1-tr:hover {
+    animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
+  }
+
+  .lg\:hover\:spin-diagonal:hover {
+    animation: spin 2s linear infinite;
   }
 }
 
@@ -70079,6 +70191,10 @@ video {
     justify-self: center;
   }
 
+  .xl\:justify-self-end {
+    justify-self: end;
+  }
+
   .xl\:bg-color-primary {
     background-color: #E3E2DF;
   }
@@ -70111,6 +70227,18 @@ video {
     background-color: #BAB8B2;
   }
 
+  .xl\:flip-vertical-right {
+    animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+
+  .xl\:flip-diagonal-1-tr {
+    animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
+  }
+
+  .xl\:spin-diagonal {
+    animation: spin 2s linear infinite;
+  }
+
   .xl\:hover\:bg-color-primary:hover {
     background-color: #E3E2DF;
   }
@@ -70141,6 +70269,18 @@ video {
 
   .xl\:hover\:bg-color-secondary:hover {
     background-color: #BAB8B2;
+  }
+
+  .xl\:hover\:flip-vertical-right:hover {
+    animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+
+  .xl\:hover\:flip-diagonal-1-tr:hover {
+    animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
+  }
+
+  .xl\:hover\:spin-diagonal:hover {
+    animation: spin 2s linear infinite;
   }
 }
 

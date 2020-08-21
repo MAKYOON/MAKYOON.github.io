@@ -60,17 +60,18 @@ function Contact() {
                 className="flex flex-col items-center text-lg
                 md:text-3xl
                 lg:text-4xl
-                xl:text-xl xl:grid xl:grid-cols-2 xl:grid-rows-3 xl:w-3/5 xl:m-auto xl:h-auto"
+                xl:text-xl xl:grid xl:grid-cols-2 xl:grid-rows-1 xl:w-3/5 xl:m-auto xl:h-auto xl:gap-2"
                 action="#"
                 method="post"
                 onSubmit={(e) => e.preventDefault()}>
                 <fieldset
                     className="w-4/5
-                    "
+                    xl:w-3/5 xl:justify-self-end "
                 >
-                    <label htmlFor="name">Nom</label> <span className="text-red-500">*</span>
                     {errors.name && (
-                        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
+                        <div
+                            className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
+                        >
                             Ce champ est obligatoire
                         </div>
                     )
@@ -84,11 +85,12 @@ function Contact() {
                            onChange={onInputChange}
                            value={info.name}
                            ref={register({required: true})}
+                           placeholder="Nom"
                     />
                 </fieldset>
                 <fieldset
                     className="w-4/5
-                    xl:w-3/5"
+                    xl:w-3/5 xl:justify-self-start xl:self-end"
                 >
                     {errors.email && (
                         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
@@ -96,7 +98,6 @@ function Contact() {
                         </div>
                     )
                     }
-                    <label htmlFor="email">Email</label> <span className="text-red-500">*</span>
                     <input id="email"
                            className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight
                            focus:outline-none focus:shadow-outline mb-3"
@@ -105,11 +106,12 @@ function Contact() {
                            onChange={onInputChange}
                            value={info.email}
                            ref={register({required: true})}
+                           placeholder="Email"
                     />
                 </fieldset>
                 <fieldset
                     className="w-4/5
-                    xl:w-3/5 xl:col-span-2"
+                    xl:w-3/5 xl:col-span-2 xl:m-auto"
                 >
                     {errors.subject && (
                         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
@@ -117,7 +119,6 @@ function Contact() {
                         </div>
                     )
                     }
-                    <label htmlFor="subject">Objet</label> <span className="text-red-500">*</span>
                     <input id="subject"
                               className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight
                               focus:outline-none focus:shadow-outline mb-3"
@@ -126,11 +127,12 @@ function Contact() {
                               onChange={onInputChange}
                               value={info.subject}
                               ref={register({required: true})}
+                              placeholder="Objet"
                     />
                 </fieldset>
                 <fieldset
                     className="w-4/5 pb-20
-                    xl:w-3/5 xl:col-span-2"
+                    xl:w-3/5 xl:col-span-2 xl:m-auto"
                 >
                     {errors.message && (
                         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
@@ -138,7 +140,6 @@ function Contact() {
                         </div>
                     )
                     }
-                    <label htmlFor="message">Message</label> <span className="text-red-500">*</span>
                     <textarea id="message"
                               className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight
                               focus:outline-none focus:shadow-outline mb-3 md:h-40 h-32"
@@ -147,13 +148,14 @@ function Contact() {
                               onChange={onInputChange}
                               value={info.message}
                               ref={register({required: true})}
+                              placeholder="Message"
                     />
                 </fieldset>
                 <button
                     className="bg-color-primary-2 hover:bg-color-primary hover:color-primary-3 text-white font-bold py-3 px-20 rounded text-xl mb-12
                     md:text-3xl
                     lg:text-5xl
-                    xl:text-2xl"
+                    xl:text-2xl xl:col-span-2 xl:w-2/5 xl:justify-self-center"
                     type="submit"
                     onClick={handleSubmit(sendEmail)}
                 >
