@@ -23,17 +23,29 @@ function CardOverlay(propts) {
                 <animated.div
                     key={key}
                     style={props}
-                    className="w-full bg-color-primary-opacity-90 z-10 h-48 md:h-80 lg:h-112 absolute top-0"
+                    className="w-full bg-color-primary-opacity-90 z-10 h-48 absolute top-0
+                    md:h-80
+                    lg:h-112"
                 >
                     {/*On affiche le titre et un bouton qui contient un lien vers le projet (données récupérées à
                      travers les props*/}
                     <figcaption className="color-primary-3 font-sans font-semibold">
-                        <h1 className="absolute pin-top text-center text-lg md:text-3xl lg:text-4xl w-full"> {propts.description} <br/> <br/>
+                        <h1
+                            className="absolute pin-top text-center text-lg w-full
+                            md:text-3xl
+                            lg:text-4xl
+                            xl:text-2xl"
+                        >
+                            {propts.description}
+                            <br/> <br/>
                             {propts.date}
                         </h1>
                         <Link
                             to={propts.link}
-                            className="absolute pin-bottom border-button px-5 py-1 rounded-full text-xl md:text-4xl lg:text-5xl"
+                            className="absolute pin-bottom border-button px-5 py-1 rounded-full text-xl
+                            md:text-4xl
+                            lg:text-5xl
+                            xl:text-2xl"
                             target="_blank"
                         >
                             Voir plus
@@ -53,7 +65,9 @@ function CardOverlay(propts) {
                 <animated.div
                     key={key}
                     style={props}
-                    className="w-full bg-color-primary-2 z-10 h-48 absolute top-0"
+                    className="w-full bg-color-primary z-10 h-48 absolute top-0
+                    md:h-80
+                    lg:h-112"
                 >
                 </animated.div>
         )

@@ -4,6 +4,9 @@
 
 @tailwind utilities;
 
+::-webkit-scrollbar-button {
+    display: none;
+}
 
 .loader {
     border: 5px solid #f3f3f3;

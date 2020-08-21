@@ -44,7 +44,8 @@ function Contact() {
         <section id="contact"
                  className="pt-24 w-full flex flex-col min-h-screen justify-around bg-color-secondary pb-4
                  md:pt-40
-                 lg:pt-48"
+                 lg:pt-48
+                 xl:pt-32"
         >
             {result && (<p className={`${result.success ? 'success' : 'error'}`}>{result.message}</p>)}
             <h1
@@ -58,11 +59,15 @@ function Contact() {
             <form
                 className="flex flex-col items-center text-lg
                 md:text-3xl
-                lg:text-4xl"
+                lg:text-4xl
+                xl:text-xl xl:grid xl:grid-cols-2 xl:grid-rows-3 xl:w-3/5 xl:m-auto xl:h-auto"
                 action="#"
                 method="post"
                 onSubmit={(e) => e.preventDefault()}>
-                <fieldset className="w-4/5">
+                <fieldset
+                    className="w-4/5
+                    "
+                >
                     <label htmlFor="name">Nom</label> <span className="text-red-500">*</span>
                     {errors.name && (
                         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
@@ -81,7 +86,10 @@ function Contact() {
                            ref={register({required: true})}
                     />
                 </fieldset>
-                <fieldset className="w-4/5">
+                <fieldset
+                    className="w-4/5
+                    xl:w-3/5"
+                >
                     {errors.email && (
                         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
                         Ce champ est obligatoire
@@ -99,7 +107,10 @@ function Contact() {
                            ref={register({required: true})}
                     />
                 </fieldset>
-                <fieldset className="w-4/5">
+                <fieldset
+                    className="w-4/5
+                    xl:w-3/5 xl:col-span-2"
+                >
                     {errors.subject && (
                         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
                             Ce champ est obligatoire
@@ -117,7 +128,10 @@ function Contact() {
                               ref={register({required: true})}
                     />
                 </fieldset>
-                <fieldset className="w-4/5 pb-20">
+                <fieldset
+                    className="w-4/5 pb-20
+                    xl:w-3/5 xl:col-span-2"
+                >
                     {errors.message && (
                         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
                             Ce champ est obligatoire
@@ -135,14 +149,22 @@ function Contact() {
                               ref={register({required: true})}
                     />
                 </fieldset>
-                <button className="bg-color-primary-2 hover:bg-blue-700 text-white font-bold py-3 px-20 rounded text-xl md:text-3xl lg:text-5xl mb-12"
-                        type="submit"
-                        onClick={handleSubmit(sendEmail)}
+                <button
+                    className="bg-color-primary-2 hover:bg-color-primary hover:color-primary-3 text-white font-bold py-3 px-20 rounded text-xl mb-12
+                    md:text-3xl
+                    lg:text-5xl
+                    xl:text-2xl"
+                    type="submit"
+                    onClick={handleSubmit(sendEmail)}
                 >
                         Envoyer
                 </button>
             </form>
-            <div className="text-xl self-center md:text-4xl">
+            <div
+                className="text-xl self-center
+                md:text-4xl
+                xl:text-2xl"
+            >
                 <div id="mail-contact">
                     <FontAwesomeIcon
                         icon={faEnvelope}

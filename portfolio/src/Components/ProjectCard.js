@@ -18,6 +18,12 @@ function ProjectCard(props) {
                 if(window.innerWidth < 1024)
                     setShowOverlay(!showOverlay);
             }}
+            onMouseEnter={() => {
+                    setShowOverlay(true);
+            }}
+            onMouseLeave={() => {
+                    setShowOverlay(false);
+            }}
         >
             {/*Cet import permet de gérer le clic en dehors du composant et du coup mettre l'état à false*/}
             <OnOutsiceClick
