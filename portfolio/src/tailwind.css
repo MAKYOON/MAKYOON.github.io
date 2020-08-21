@@ -14404,10 +14404,12 @@ video {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg);
+  0% {
+    transform: rotate(0deg);
   }
 
-  100% { transform: rotate(360deg);
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -14419,7 +14421,7 @@ video {
 
 .success {
   text-align: center;
-  background-color:  #f0fff4;
+  background-color: #f0fff4;
   border-width: 1px;
   border-color: #68d391;
   color: #2f855a;
@@ -14449,6 +14451,14 @@ video {
           clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%, 0 53%);
 }
 
+.justify-self-start {
+  justify-self: start;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
+
 .bg-color-primary {
   background-color: #E3E2DF;
 }
@@ -14462,11 +14472,11 @@ video {
 }
 
 .bg-color-primary-opacity-90 {
-  background-color: rgba(227,226,223,0.90);
+  background-color: rgba(227, 226, 223, 0.90);
 }
 
 .color-primary {
-  color : #E3E2DF;
+  color: #E3E2DF;
 }
 
 .color-primary-2 {
@@ -14474,15 +14484,55 @@ video {
 }
 
 .color-primary-3 {
-  color: #9A1750;
+  color: #5D001E;
+}
+
+.color-title {
+  color: #004827;
 }
 
 .bg-color-secondary {
   background-color: #BAB8B2;
 }
 
+.hover\:bg-color-primary:hover {
+  background-color: #E3E2DF;
+}
+
+.hover\:bg-color-primary-2:hover {
+  background-color: #5D001E;
+}
+
+.hover\:bg-color-primary-3:hover {
+  background-color: #EE4C7C;
+}
+
+.hover\:bg-color-primary-opacity-90:hover {
+  background-color: rgba(227, 226, 223, 0.90);
+}
+
+.hover\:color-primary:hover {
+  color: #E3E2DF;
+}
+
+.hover\:color-primary-2:hover {
+  color: #EE4C7C
+}
+
+.hover\:color-primary-3:hover {
+  color: #5D001E;
+}
+
+.hover\:color-title:hover {
+  color: #004827;
+}
+
+.hover\:bg-color-secondary:hover {
+  background-color: #BAB8B2;
+}
+
 .border-button {
-  border : 1px solid #9A1750;
+  border: 1px solid #9A1750;
 }
 
 .pin-top {
@@ -14516,7 +14566,22 @@ video {
 .pin-center {
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+}
+
+.section-title:after {
+  content: "";
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  height: 1px;
+  width: 100px;
+  border-bottom: 1px solid #5D001E;
+}
+
+.img-box-shadow {
+  box-shadow: 12px 12px 2px 1px rgba(93, 0, 30, .8);
 }
 
 @media (min-width: 640px) {
@@ -28335,6 +28400,86 @@ video {
 
   .sm\:delay-1000 {
     transition-delay: 1000ms;
+  }
+
+  .sm\:justify-self-start {
+    justify-self: start;
+  }
+
+  .sm\:justify-self-center {
+    justify-self: center;
+  }
+
+  .sm\:bg-color-primary {
+    background-color: #E3E2DF;
+  }
+
+  .sm\:bg-color-primary-2 {
+    background-color: #5D001E;
+  }
+
+  .sm\:bg-color-primary-3 {
+    background-color: #EE4C7C;
+  }
+
+  .sm\:bg-color-primary-opacity-90 {
+    background-color: rgba(227, 226, 223, 0.90);
+  }
+
+  .sm\:color-primary {
+    color: #E3E2DF;
+  }
+
+  .sm\:color-primary-2 {
+    color: #EE4C7C
+  }
+
+  .sm\:color-primary-3 {
+    color: #5D001E;
+  }
+
+  .sm\:color-title {
+    color: #004827;
+  }
+
+  .sm\:bg-color-secondary {
+    background-color: #BAB8B2;
+  }
+
+  .sm\:hover\:bg-color-primary:hover {
+    background-color: #E3E2DF;
+  }
+
+  .sm\:hover\:bg-color-primary-2:hover {
+    background-color: #5D001E;
+  }
+
+  .sm\:hover\:bg-color-primary-3:hover {
+    background-color: #EE4C7C;
+  }
+
+  .sm\:hover\:bg-color-primary-opacity-90:hover {
+    background-color: rgba(227, 226, 223, 0.90);
+  }
+
+  .sm\:hover\:color-primary:hover {
+    color: #E3E2DF;
+  }
+
+  .sm\:hover\:color-primary-2:hover {
+    color: #EE4C7C
+  }
+
+  .sm\:hover\:color-primary-3:hover {
+    color: #5D001E;
+  }
+
+  .sm\:hover\:color-title:hover {
+    color: #004827;
+  }
+
+  .sm\:hover\:bg-color-secondary:hover {
+    background-color: #BAB8B2;
   }
 }
 
@@ -42155,6 +42300,86 @@ video {
   .md\:delay-1000 {
     transition-delay: 1000ms;
   }
+
+  .md\:justify-self-start {
+    justify-self: start;
+  }
+
+  .md\:justify-self-center {
+    justify-self: center;
+  }
+
+  .md\:bg-color-primary {
+    background-color: #E3E2DF;
+  }
+
+  .md\:bg-color-primary-2 {
+    background-color: #5D001E;
+  }
+
+  .md\:bg-color-primary-3 {
+    background-color: #EE4C7C;
+  }
+
+  .md\:bg-color-primary-opacity-90 {
+    background-color: rgba(227, 226, 223, 0.90);
+  }
+
+  .md\:color-primary {
+    color: #E3E2DF;
+  }
+
+  .md\:color-primary-2 {
+    color: #EE4C7C
+  }
+
+  .md\:color-primary-3 {
+    color: #5D001E;
+  }
+
+  .md\:color-title {
+    color: #004827;
+  }
+
+  .md\:bg-color-secondary {
+    background-color: #BAB8B2;
+  }
+
+  .md\:hover\:bg-color-primary:hover {
+    background-color: #E3E2DF;
+  }
+
+  .md\:hover\:bg-color-primary-2:hover {
+    background-color: #5D001E;
+  }
+
+  .md\:hover\:bg-color-primary-3:hover {
+    background-color: #EE4C7C;
+  }
+
+  .md\:hover\:bg-color-primary-opacity-90:hover {
+    background-color: rgba(227, 226, 223, 0.90);
+  }
+
+  .md\:hover\:color-primary:hover {
+    color: #E3E2DF;
+  }
+
+  .md\:hover\:color-primary-2:hover {
+    color: #EE4C7C
+  }
+
+  .md\:hover\:color-primary-3:hover {
+    color: #5D001E;
+  }
+
+  .md\:hover\:color-title:hover {
+    color: #004827;
+  }
+
+  .md\:hover\:bg-color-secondary:hover {
+    background-color: #BAB8B2;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -55973,6 +56198,86 @@ video {
 
   .lg\:delay-1000 {
     transition-delay: 1000ms;
+  }
+
+  .lg\:justify-self-start {
+    justify-self: start;
+  }
+
+  .lg\:justify-self-center {
+    justify-self: center;
+  }
+
+  .lg\:bg-color-primary {
+    background-color: #E3E2DF;
+  }
+
+  .lg\:bg-color-primary-2 {
+    background-color: #5D001E;
+  }
+
+  .lg\:bg-color-primary-3 {
+    background-color: #EE4C7C;
+  }
+
+  .lg\:bg-color-primary-opacity-90 {
+    background-color: rgba(227, 226, 223, 0.90);
+  }
+
+  .lg\:color-primary {
+    color: #E3E2DF;
+  }
+
+  .lg\:color-primary-2 {
+    color: #EE4C7C
+  }
+
+  .lg\:color-primary-3 {
+    color: #5D001E;
+  }
+
+  .lg\:color-title {
+    color: #004827;
+  }
+
+  .lg\:bg-color-secondary {
+    background-color: #BAB8B2;
+  }
+
+  .lg\:hover\:bg-color-primary:hover {
+    background-color: #E3E2DF;
+  }
+
+  .lg\:hover\:bg-color-primary-2:hover {
+    background-color: #5D001E;
+  }
+
+  .lg\:hover\:bg-color-primary-3:hover {
+    background-color: #EE4C7C;
+  }
+
+  .lg\:hover\:bg-color-primary-opacity-90:hover {
+    background-color: rgba(227, 226, 223, 0.90);
+  }
+
+  .lg\:hover\:color-primary:hover {
+    color: #E3E2DF;
+  }
+
+  .lg\:hover\:color-primary-2:hover {
+    color: #EE4C7C
+  }
+
+  .lg\:hover\:color-primary-3:hover {
+    color: #5D001E;
+  }
+
+  .lg\:hover\:color-title:hover {
+    color: #004827;
+  }
+
+  .lg\:hover\:bg-color-secondary:hover {
+    background-color: #BAB8B2;
   }
 }
 
@@ -69793,6 +70098,85 @@ video {
   .xl\:delay-1000 {
     transition-delay: 1000ms;
   }
-}
 
+  .xl\:justify-self-start {
+    justify-self: start;
+  }
+
+  .xl\:justify-self-center {
+    justify-self: center;
+  }
+
+  .xl\:bg-color-primary {
+    background-color: #E3E2DF;
+  }
+
+  .xl\:bg-color-primary-2 {
+    background-color: #5D001E;
+  }
+
+  .xl\:bg-color-primary-3 {
+    background-color: #EE4C7C;
+  }
+
+  .xl\:bg-color-primary-opacity-90 {
+    background-color: rgba(227, 226, 223, 0.90);
+  }
+
+  .xl\:color-primary {
+    color: #E3E2DF;
+  }
+
+  .xl\:color-primary-2 {
+    color: #EE4C7C
+  }
+
+  .xl\:color-primary-3 {
+    color: #5D001E;
+  }
+
+  .xl\:color-title {
+    color: #004827;
+  }
+
+  .xl\:bg-color-secondary {
+    background-color: #BAB8B2;
+  }
+
+  .xl\:hover\:bg-color-primary:hover {
+    background-color: #E3E2DF;
+  }
+
+  .xl\:hover\:bg-color-primary-2:hover {
+    background-color: #5D001E;
+  }
+
+  .xl\:hover\:bg-color-primary-3:hover {
+    background-color: #EE4C7C;
+  }
+
+  .xl\:hover\:bg-color-primary-opacity-90:hover {
+    background-color: rgba(227, 226, 223, 0.90);
+  }
+
+  .xl\:hover\:color-primary:hover {
+    color: #E3E2DF;
+  }
+
+  .xl\:hover\:color-primary-2:hover {
+    color: #EE4C7C
+  }
+
+  .xl\:hover\:color-primary-3:hover {
+    color: #5D001E;
+  }
+
+  .xl\:hover\:color-title:hover {
+    color: #004827;
+  }
+
+  .xl\:hover\:bg-color-secondary:hover {
+    background-color: #BAB8B2;
+  }
+}
 

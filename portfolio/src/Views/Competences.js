@@ -12,18 +12,25 @@ function Competences()
 
 		<section
 			id="competences"
-			className="pt-24 md:pt-40 w-full min-h-screen bg-color-secondary text-lg"
+			className="pt-24 w-full min-h-screen bg-color-secondary text-lg
+			md:pt-40 "
 		>
 			<Fade cascade triggerOnce>
 				<h1
-					className="font-bold text-3xl md:text-5xl lg:text-6xl text-center w-full bg-color-primary-2 text-white p-3 md:p-5 lg:p-8"
+					className="text-3xl text-center text-black p-3 section-title
+					md:text-5xl md:p-5
+					lg:text-6xl lg:p-8
+					xl:text-4xl xl:p-3"
 				>
 					COMPÉTENCES
 				</h1>
 				<div className="pt-20"
 					 id="langages"
 				>
-					<h2 className="ml-5 color-primary-3 text-2xl md:text-5xl lg:text-6xl mb-8 "
+					<h2 className="ml-5 color-primary-3 text-2xl mb-8
+					md:text-5xl
+					lg:text-6xl
+					xl:text-4xl"
 					>
 						<FontAwesomeIcon
 							icon={faCode}
@@ -58,7 +65,11 @@ function Competences()
 				<div className="pt-20"
 					 id="outils"
 				>
-					<h2 className="ml-5 color-primary-3 text-2xl md:text-5xl lg:text-6xl  mb-8 ">
+					<h2 className="ml-5 color-primary-3 text-2xl mb-8
+					md:text-5xl
+					lg:text-6xl
+					xl:text-4xl"
+					>
 						<FontAwesomeIcon
 							icon={faToolbox}
 							className="mr-3"

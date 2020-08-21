@@ -7,39 +7,72 @@ function MyProjects() {
     return (
         <section
             id="projects"
-            className="pt-24 md:pt-40 lg:pt-48 bg-color-primary w-full min-h-screen relative pb-4"
+            className="pt-24 bg-color-primary w-full min-h-screen relative pb-4
+            md:pt-40
+            lg:pt-48
+            xl:pt-32"
         >
-            <Fade cascade triggerOnce>
-                <h1 className="font-bold bg-color-primary-2 text-white text-center p-3 md:p-5 text-3xl md:text-5xl lg:text-6xl mb-12"> PROJETS </h1>
-                <ProjectCard
-                    name="portfolio.png"
-                    title="Portfolio"
-                    description="Portfolio réalisé sous React & Tailwind"
-                    date="2020"
-                    link="/"
-                />
-                <ProjectCard
-                    name="geekpotato.png"
-                    title="Geek Potato"
-                    description="Jeu de plateforme sur le thème 'Réparer'"
-                    date="GGJ - 2020"
-                    link="/projects/geekpotato"
-                />
-                <ProjectCard
-                    name="survivalz.png"
-                    title="SurvivalZ"
-                    description="Un top-down shooter : survivez face aux zombies !"
-                    date="2019"
-                    link="/projects/survivalz"
-                />
-                <ProjectCard
-                    name="serenity.png"
-                    title="Serenity"
-                    description="Prototype de jeu anti-stress"
-                    date="Ludus Académie - 2019"
-                    link="/projects/serenity"
-                />
-            </Fade>
+
+                <h1
+                    className="section-title text-3xl text-black text-center p-3 mb-12
+                    md:p-5 md:text-5xl
+                    lg:text-6xl
+                    xl:text-4xl xl:p-3"
+                >
+                    PROJETS
+                </h1>
+                <div
+                    className="xl:grid xl:grid-cols-3 xl:grid-rows-2 xl:gap-2 xl:w-4/5 xl:m-auto "
+                >
+                    <div
+                        className="xl:col-span-2"
+                    >
+                        <Fade>
+                            <ProjectCard
+                                name="portfolio.png"
+                                title="Portfolio"
+                                description="Portfolio réalisé sous React & Tailwind"
+                                date="2020"
+                                link="/"
+                            />
+                        </Fade>
+                    </div>
+                    <div>
+                        <Fade delay={200}>
+                            <ProjectCard
+                                name="geekpotato.png"
+                                title="Geek Potato"
+                                description="Jeu de plateforme sur le thème 'Réparer'"
+                                date="GGJ - 2020"
+                                link="/projects/geekpotato"
+                            />
+                        </Fade>
+                    </div>
+                    <div>
+                        <Fade delay={300}>
+                            <ProjectCard
+                                name="survivalz.png"
+                                title="SurvivalZ"
+                                description="Un top-down shooter : survivez face aux zombies !"
+                                date="2019"
+                                link="/projects/survivalz"
+                            />
+                        </Fade>
+                    </div>
+                    <div
+                        className="xl:col-span-2"
+                    >
+                        <Fade delay={400}>
+                            <ProjectCard
+                                name="serenity.png"
+                                title="Serenity"
+                                description="Prototype de jeu anti-stress"
+                                date="Ludus Académie - 2019"
+                                link="/projects/serenity"
+                            />
+                        </Fade>
+                    </div>
+                </div>
         </section>
     );
 }

@@ -3,13 +3,24 @@ import React from 'react';
 function Serenity()
 {
 	return (
-		<div className="bg-color-primary text-black text-center">
+		<div
+			className="bg-color-primary text-black text-center
+			md:text-xl
+			lg:text-3xl
+			xl:text-base"
+		>
 			<h1
-				className="text-3xl font-bold color-primary-3"
+				className="text-3xl font-bold color-primary-3 section-title
+				md:text-4xl
+				lg:text-5xl
+				xl:text-3xl"
 			>
 				Serenity
 			</h1>
-			<p className="pt-5 px-20">
+			<p
+				className="pt-5 px-5
+				xl:px-20"
+			>
 				Serenity est un prototype de jeu anti-stress réalisé sous Unity dans le cadre d'un examen au cours de mon cursus à Ludus
 				Académie. Le but était de réaliser un prototype de jeu permettant d'évaluer la réduction du stress au sein
 				d'une entreprise. <br/>
@@ -19,7 +30,13 @@ function Serenity()
 				dans un dossier sur son ordinateur, lui permettant de se rappeler les bons souvenirs.
 			</p>
 			<br/>
-			<h1 className="text-xl font-bold color-primary-3">Contrôles</h1>
+			<h1 className="text-3xl font-bold color-primary-3 section-title
+				md:text-4xl
+				lg:text-5xl
+				xl:text-3xl"
+			>
+				Contrôles
+			</h1>
 			<br/>
 			<p>
 				Déplacements : Z,Q,S,D <br/>

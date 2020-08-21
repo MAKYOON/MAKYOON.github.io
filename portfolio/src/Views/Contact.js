@@ -42,11 +42,26 @@ function Contact() {
 
     return (
         <section id="contact"
-                 className="pt-24 md:pt-40 lg:pt-48 color-primary-3 w-full flex flex-col min-h-screen justify-around bg-color-secondary pb-4"
+                 className="pt-24 w-full flex flex-col min-h-screen justify-around bg-color-secondary pb-4
+                 md:pt-40
+                 lg:pt-48"
         >
             {result && (<p className={`${result.success ? 'success' : 'error'}`}>{result.message}</p>)}
-            <h1  className=" font-bold text-3xl md:text-5xl lg:text-6xl text-center w-full bg-color-primary-2 text-white p-3 md:p-5 mb-8 md:mb-12"> CONTACT </h1>
-            <form className="flex flex-col items-center text-lg md:text-3xl lg:text-4xl" action="#" method="post" onSubmit={(e) => e.preventDefault()}>
+            <h1
+                className="text-3xl text-center text-black p-3 section-title mb-8
+                md:text-5xl md:p-5 md:mb-12
+                lg:text-6xl lg:p-8
+                xl:text-4xl xl:p-3"
+            >
+                CONTACT
+            </h1>
+            <form
+                className="flex flex-col items-center text-lg
+                md:text-3xl
+                lg:text-4xl"
+                action="#"
+                method="post"
+                onSubmit={(e) => e.preventDefault()}>
                 <fieldset className="w-4/5">
                     <label htmlFor="name">Nom</label> <span className="text-red-500">*</span>
                     {errors.name && (
@@ -134,11 +149,12 @@ function Contact() {
                         className="color-primary-3"
                     />
                     <a href="mailto:li.kevin.contact@gmail.com"
-                       className="p-3 color-primary-3">li.kevin.contact@gmail.com</a>
+                       className="p-3">li.kevin.contact@gmail.com</a>
                 </div>
                 <div id="mobile-contact" className="text-center">
                     <FontAwesomeIcon
                         icon={faMobileAlt}
+                        className="color-primary-3"
                     />
                     <span className="p-3">06 76 33 01 70</span>
                 </div>
