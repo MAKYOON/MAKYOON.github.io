@@ -3,8 +3,12 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 import {useTransition, animated} from 'react-spring'
 import NavigationMenu from "./NavigationMenu";
+import WindowSize from "../Hooks/WindowSize";
+import useWindowSize from "../Hooks/WindowSize";
 
 function NavigationBar() {
+
+    const size = useWindowSize();
 
     const [hidden, setHidden] = useState(false);
 
@@ -21,8 +25,11 @@ function NavigationBar() {
         leave: { opacity: 0, transform: 'translateX(-100%)' },
     })
 
+    if (size.width < 1024)
+        setHidden(true);
 
     if(hidden) {
+
         return (
             <nav>
                 <span className="text-xl cursor-pointer md:text-4xl lg:text-5xl">

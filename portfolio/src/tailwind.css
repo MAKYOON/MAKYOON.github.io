@@ -14507,10 +14507,6 @@ video {
   animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
 }
 
-.spin-diagonal {
-  animation: spin 2s linear infinite;
-}
-
 .hover\:bg-color-primary:hover {
   background-color: #E3E2DF;
 }
@@ -14549,10 +14545,6 @@ video {
 
 .hover\:flip-diagonal-1-tr:hover {
   animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
-}
-
-.hover\:spin-diagonal:hover {
-  animation: spin 2s linear infinite;
 }
 
 .border-button {
@@ -28478,10 +28470,6 @@ video {
     animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
   }
 
-  .sm\:spin-diagonal {
-    animation: spin 2s linear infinite;
-  }
-
   .sm\:hover\:bg-color-primary:hover {
     background-color: #E3E2DF;
   }
@@ -28520,10 +28508,6 @@ video {
 
   .sm\:hover\:flip-diagonal-1-tr:hover {
     animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
-  }
-
-  .sm\:hover\:spin-diagonal:hover {
-    animation: spin 2s linear infinite;
   }
 }
 
@@ -42397,10 +42381,6 @@ video {
     animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
   }
 
-  .md\:spin-diagonal {
-    animation: spin 2s linear infinite;
-  }
-
   .md\:hover\:bg-color-primary:hover {
     background-color: #E3E2DF;
   }
@@ -42439,10 +42419,6 @@ video {
 
   .md\:hover\:flip-diagonal-1-tr:hover {
     animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
-  }
-
-  .md\:hover\:spin-diagonal:hover {
-    animation: spin 2s linear infinite;
   }
 }
 
@@ -56316,10 +56292,6 @@ video {
     animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
   }
 
-  .lg\:spin-diagonal {
-    animation: spin 2s linear infinite;
-  }
-
   .lg\:hover\:bg-color-primary:hover {
     background-color: #E3E2DF;
   }
@@ -56358,10 +56330,6 @@ video {
 
   .lg\:hover\:flip-diagonal-1-tr:hover {
     animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
-  }
-
-  .lg\:hover\:spin-diagonal:hover {
-    animation: spin 2s linear infinite;
   }
 }
 
@@ -70235,10 +70203,6 @@ video {
     animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
   }
 
-  .xl\:spin-diagonal {
-    animation: spin 2s linear infinite;
-  }
-
   .xl\:hover\:bg-color-primary:hover {
     background-color: #E3E2DF;
   }
@@ -70277,10 +70241,6 @@ video {
 
   .xl\:hover\:flip-diagonal-1-tr:hover {
     animation: flip-diagonal-1-tr 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s infinite both;
-  }
-
-  .xl\:hover\:spin-diagonal:hover {
-    animation: spin 2s linear infinite;
   }
 }
 
