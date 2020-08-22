@@ -1,7 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Link} from 'react-scroll';
+import useWindowSize from "../Hooks/WindowSize";
 
 function NavigationMenu(props) {
+
+    const size = useWindowSize();
+
+    let offSet;
+
+    useEffect(() => {
+        if(size.width > 1024)
+            offSet = 80;
+        else
+            offSet = 0;
+    })
 
     return (
         <div className="h-full">
@@ -9,7 +21,6 @@ function NavigationMenu(props) {
             md:text-3xl
             lg:text-4xl
             xl:flex-row xl:text-xl"
-
             >
                 <li
                     className="py-3 border-b-2
@@ -18,9 +29,10 @@ function NavigationMenu(props) {
                         to="accueil"
                         onClick={props.closeMenu}
                         spy={true}
+                        isDynamic={true}
                         smooth={true}
                         offset={0}
-                        duration={300}
+                        duration={500}
                         activeClass="active"
                     >
                         Accueil
@@ -35,9 +47,10 @@ function NavigationMenu(props) {
                         activeClass="active"
                         to="presentation"
                         spy={true}
+                        isDynamic={true}
                         smooth={true}
-                        offset={50}
-                        duration={300}
+                        offset={0}
+                        duration={500}
                     >
                         Présentation
                     </Link>
@@ -51,9 +64,10 @@ function NavigationMenu(props) {
                         activeClass="active"
                         to="competences"
                         spy={true}
+                        isDynamic={true}
                         smooth={true}
-                        offset={50}
-                        duration={300}
+                        offset={0}
+                        duration={500}
                     >
                         Compétences
                     </Link>
@@ -67,9 +81,10 @@ function NavigationMenu(props) {
                         activeClass="active"
                         to="projects"
                         spy={true}
+                        isDynamic={true}
                         smooth={true}
-                        offset={40}
-                        duration={300}
+                        offset={0}
+                        duration={500}
                     >
                         Mes Projets
                     </Link>
@@ -83,9 +98,10 @@ function NavigationMenu(props) {
                         activeClass="active"
                         to="contact"
                         spy={true}
+                        isDynamic={true}
                         smooth={true}
-                        offset={45}
-                        duration={300}
+                        offset={0}
+                        duration={500}
                     >
                         Contact
                     </Link>

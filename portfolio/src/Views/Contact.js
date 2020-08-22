@@ -4,7 +4,7 @@ import {faMobileAlt} from "@fortawesome/free-solid-svg-icons";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import axios from 'axios';
 import {useForm} from "react-hook-form";
-
+import {faPaperPlane} from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
     const {register, errors, handleSubmit} = useForm();
@@ -50,10 +50,14 @@ function Contact() {
             {result && (<p className={`${result.success ? 'success' : 'error'}`}>{result.message}</p>)}
             <h1
                 className="text-3xl text-center text-black p-3 section-title mb-8
-                md:text-5xl md:p-5 md:mb-12
+                md:text-5xl md:p-5
                 lg:text-6xl lg:p-8
                 xl:text-4xl xl:p-3"
             >
+                <FontAwesomeIcon
+                    icon={faPaperPlane}
+                    className="mr-3"
+                />
                 CONTACT
             </h1>
             <form

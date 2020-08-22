@@ -1,6 +1,8 @@
 import React from 'react';
 import ProjectCard from "../Components/ProjectCard";
 import {Fade} from "react-awesome-reveal";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faTasks} from "@fortawesome/free-solid-svg-icons";
 
 function MyProjects() {
     
@@ -19,6 +21,10 @@ function MyProjects() {
                     lg:text-6xl
                     xl:text-4xl xl:p-3"
                 >
+                    <FontAwesomeIcon
+                        icon={faTasks}
+                        className="mr-3"
+                    />
                     PROJETS
                 </h1>
                 <div
@@ -27,7 +33,7 @@ function MyProjects() {
                     <div
                         className="xl:col-span-2"
                     >
-                        <Fade>
+                        <Fade triggerOnce>
                             <ProjectCard
                                 name="portfolio.png"
                                 title="Portfolio"
@@ -38,7 +44,7 @@ function MyProjects() {
                         </Fade>
                     </div>
                     <div>
-                        <Fade delay={200}>
+                        <Fade delay={200} triggerOnce>
                             <ProjectCard
                                 name="geekpotato.png"
                                 title="Geek Potato"
@@ -49,7 +55,7 @@ function MyProjects() {
                         </Fade>
                     </div>
                     <div>
-                        <Fade delay={300}>
+                        <Fade delay={300} triggerOnce>
                             <ProjectCard
                                 name="survivalz.png"
                                 title="SurvivalZ"
@@ -62,7 +68,7 @@ function MyProjects() {
                     <div
                         className="xl:col-span-2"
                     >
-                        <Fade delay={400}>
+                        <Fade delay={400} triggerOnce>
                             <ProjectCard
                                 name="serenity.png"
                                 title="Serenity"

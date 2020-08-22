@@ -1,6 +1,6 @@
 import React from 'react';
 import NavigationBar from "./NavigationBar";
-import {Link} from "react-router-dom";
+import {Link} from 'react-scroll';
 
 function Header() {
     return (
@@ -10,11 +10,16 @@ function Header() {
             lg:p-12
             xl:p-6"
         >
-            <Link to="/"
-                  className="font-bold text-xl text-white
-                   md:text-3xl
-                   lg:text-4xl
-                   xl:text-2xl"
+            <Link
+                to="accueil"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                className="font-bold text-xl text-white
+                md:text-3xl
+                lg:text-4xl
+                xl:text-2xl"
             >
                 LI Kevin
             </Link>

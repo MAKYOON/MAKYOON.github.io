@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 import {useTransition, animated} from 'react-spring'
 import NavigationMenu from "./NavigationMenu";
-import WindowSize from "../Hooks/WindowSize";
 import useWindowSize from "../Hooks/WindowSize";
 
 function NavigationBar() {
@@ -25,8 +24,12 @@ function NavigationBar() {
         leave: { opacity: 0, transform: 'translateX(-100%)' },
     })
 
-    if (size.width < 1024)
-        setHidden(true);
+    useEffect(() => {
+        if (size.width < 1280)
+            setHidden(true);
+        else
+            setHidden(false);
+    } )
 
     if(hidden) {
 

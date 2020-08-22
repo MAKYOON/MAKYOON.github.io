@@ -18,10 +18,10 @@ function Competences()
 		>
 			<Fade cascade triggerOnce>
 				<h1
-					className="text-3xl text-center text-black p-3 section-title
+					className="text-3xl text-center text-black p-3 section-title mb-5
 					md:text-5xl md:p-5
 					lg:text-6xl lg:p-8
-					xl:text-4xl xl:p-3"
+					xl:text-4xl xl:p-3 "
 				>
 					<FontAwesomeIcon
 						icon={faBook}
@@ -30,22 +30,22 @@ function Competences()
 					COMPÉTENCES
 				</h1>
 				<div
-					className="grid grid-rows-1 grid-cols-2"
+					className="xl:grid xl:grid-rows-1 xl:grid-cols-2"
 				>
 					<div
 						className="grid grid-cols-2 grid-rows-2 gap-2 w-2/5 m-auto order-2 "
 					>
-						<img className="bg-white hover:flip-vertical-right"
+						<img className="bg-color-primary hover:flip-vertical-right"
 							 src={require("../Assets/html_image.png")} alt="HTML"/>
-						<img className="bg-white hover:spin-diagonal"
+						<img className="bg-color-primary hover:spin-diagonal"
 							 src={require("../Assets/css_image.png")} alt="CSS"/>
-						<img className="bg-white"
+						<img className="bg-color-primary"
 							 src={require("../Assets/tailwind_image.png")} alt="Tailwind"/>
-						<img className="bg-white"
+						<img className="bg-color-primary"
 							 src={require("../Assets/react_image.png")} alt="React"/>
 					</div>
 					<div>
-						<div className="pt-20"
+						<div className="pt-20 xl:pl-20"
 							 id="langages"
 						>
 							<h2 className="ml-5 color-primary-3 text-2xl mb-8
@@ -83,7 +83,7 @@ function Competences()
 								/>
 							</div>
 						</div>
-						<div className="pt-20"
+						<div className="pt-20 xl:pl-20"
 							 id="outils"
 						>
 							<h2 className="ml-5 color-primary-3 text-2xl mb-8
