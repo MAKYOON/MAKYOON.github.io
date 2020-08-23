@@ -25,18 +25,20 @@ function Formation()
 					icon={faBook}
 					className="mr-3"
 				/>
-				FORMATION
+				FORMATION ET EXPERIENCES
 			</h1>
 			<VerticalTimeline>
 				<VerticalTimelineElement
+					className="flex"
 					contentStyle={{ borderTop: '3px solid #5D001E'}}
 					contentArrowStyle={{ borderRight: '7px solid  #5D001E' }}
 					iconStyle={{ background: '#5D001E', color: '#fff' }}
 					icon={<FontAwesomeIcon
 						icon={faBriefcase}
 						className="text-2xl"
-					/>
-					}
+					/>}
+					position="left"
+					date="Sept 2020"
 				>
 					<div
 						className="m-auto"
@@ -50,28 +52,35 @@ function Formation()
 							 className="w-2/5 inline mb-5 "
 						/>
 					</div>
-					<h3 className="text-xl font-bold">Licence Pro</h3>
-					<h4 className="text-base italic mb-5">Développement Web, Communication et Apprentissages</h4>
-					<div
-						className="text-base mb-3"
+					<h3
+						className="text-xl font-bold
+						md:text-2xl
+						lg:text-3xl"
 					>
+						Licence Pro
+					</h3>
+					<h4
+						className="text-base italic mb-5
+						md:text-lg
+						lg:text-xl"
+					>
+						Développement Web, Communication et Apprentissages
+					</h4>
+					<p>
 						Alternance au sein de l'entreprise AirCampus
-					</div>
-					<div
-						className="text-base text-gray-700"
-					>
-						Sept 2020
-					</div>
+					</p>
+
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					contentStyle={{ borderTop: '3px solid #420044'}}
 					contentArrowStyle={{ borderRight: '7px solid #420044' }}
-					date="2018 - 2020"
 					iconStyle={{ background: '#420044', color: '#fff' }}
 					icon={<FontAwesomeIcon
 						icon={faChalkboardTeacher}
 						className="text-xl"
 					/>}
+					position="right"
+					date="2018-2020"
 				>
 					<div>
 						<img src={require("../Assets/ludus.png")}
@@ -79,21 +88,34 @@ function Formation()
 							 className="w-2/5 m-auto mb-5 "
 						/>
 					</div>
-					<h3 className="text-xl font-bold">Foundation Degree</h3>
-					<h4 className="text-base italic mb-5">Jeux vidéos et Serious Games</h4>
+					<h3
+						className="text-xl font-bold
+						md:text-2xl
+						lg:text-3xl"
+					>
+						Foundation Degree
+					</h3>
+					<h4
+						className="text-base italic mb-5
+						md:text-lg
+						lg:text-xl"
+					>
+						Jeux vidéos et Serious Games
+					</h4>
 					<p>
-						Préparation d'un Foundation Degree (Bac +2) au sein de l'école Ludus Académie
+						Préparation d'un Foundation Degree (Bac +2) au sein de l'école Ludus Académie ( Programmation et Game Design )
 					</p>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					contentStyle={{ borderTop: '3px solid #004827'}}
 					contentArrowStyle={{ borderRight: '7px solid #004827' }}
-					date="2016-2018"
 					iconStyle={{ background: '#004827', color: '#fff' }}
 					icon={<FontAwesomeIcon
 						icon={faBreadSlice}
 						className="text-xl"
 					/>}
+					position="left"
+					date="2016-2018"
 				>
 					<div
 						className="m-auto"
@@ -107,8 +129,20 @@ function Formation()
 							 className="w-2/5 inline mb-5 "
 						/>
 					</div>
-					<h3 className="text-xl font-bold">CAP</h3>
-					<h4 className="text-base italic mb-5">Pâtissier</h4>
+					<h3
+						className="text-xl font-bold
+						md:text-2xl
+						lg:text-3xl"
+					>
+						CAP
+					</h3>
+					<h4
+						className="text-base italic mb-5
+						md:text-lg
+						lg:text-xl"
+					>
+						Pâtissier
+					</h4>
 					<p>
 						Alternance au sein de la pâtisserie Amande & Cannelle pendant 2 ans
 					</p>

@@ -14398,8 +14398,52 @@ video {
 
 @import "~react-vertical-timeline-component/docs/main.css";
 
-::-webkit-scrollbar-button {
-  display: none;
+.vertical-timeline-element-content .vertical-timeline-element-date, .vertical-timeline-element-content p
+{
+  font-size   : 1rem;
+}
+
+.vertical-timeline-element-date {
+  font-size: 1.25rem;
+  opacity: 1;
+  color: black;
+  font-weight: bolder;
+}
+
+@media only screen and (min-width : 768px) {
+  .vertical-timeline-element-content .vertical-timeline-element-date, .vertical-timeline-element-content p
+    {
+    font-size   : 1.25rem;
+  }
+
+  .vertical-timeline-element-date
+    {
+    font-size   : 1.125rem;
+  }
+}
+
+@media only screen and (min-width : 1024px) {
+  .vertical-timeline-element-content .vertical-timeline-element-date, .vertical-timeline-element-content p
+    {
+    font-size   : 1.5rem;
+  }
+
+  .vertical-timeline-element-date
+    {
+    font-size   : 1.25rem;
+  }
+}
+
+@media only screen and (min-width : 1280px) {
+  .vertical-timeline-element-content .vertical-timeline-element-date, .vertical-timeline-element-content p
+    {
+    font-size   : 1.25rem;
+  }
+
+  .vertical-timeline-element-date
+    {
+    font-size   : 2rem;
+  }
 }
 
 .loader {
