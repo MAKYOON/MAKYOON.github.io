@@ -1,19 +1,7 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Link} from 'react-scroll';
-import useWindowSize from "../Hooks/WindowSize";
 
 function NavigationMenu(props) {
-
-    const size = useWindowSize();
-
-    let offSet;
-
-    useEffect(() => {
-        if(size.width > 1024)
-            offSet = 80;
-        else
-            offSet = 0;
-    })
 
     return (
         <div className="h-full">
@@ -70,6 +58,23 @@ function NavigationMenu(props) {
                         duration={500}
                     >
                         Compétences
+                    </Link>
+                </li>
+                <li
+                    className="py-3 border-b-2
+                    xl:border-b-0 xl:py-0 xl:px-5"
+                >
+                    <Link
+                        onClick={props.closeMenu}
+                        activeClass="active"
+                        to="formation"
+                        spy={true}
+                        isDynamic={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        Formation
                     </Link>
                 </li>
                 <li

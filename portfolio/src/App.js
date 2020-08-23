@@ -1,7 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch,} from "react-router-dom";
-import Header from "./Components/Header";
-import Posts from "./Views/Posts";
+import Header from "./Views/Header";
 import Presentation from "./Views/Presentation";
 import MyProjects from "./Views/MyProjects";
 import Contact from "./Views/Contact";
@@ -9,12 +8,13 @@ import SurvivalZ from "./Views/SurvivalZ";
 import Accueil from "./Views/Accueil";
 import GeekPotato from "./Views/GeekPotato";
 import Serenity from "./Views/Serenity";
-import Footer from "./Components/Footer";
+import Footer from "./Views/Footer";
 import Competences from "./Views/Competences";
+import Formation from "./Views/Formation";
 
 function App() {
     return (
-        <div className="App relative min-h-screen font-serif">
+        <div className="App relative font-serif">
             <Router>
                 <Switch>
                     <Route exact path="/">
@@ -22,12 +22,10 @@ function App() {
                         <Accueil/>
                         <Presentation/>
                         <Competences/>
+                        <Formation/>
                         <MyProjects/>
                         <Contact/>
                         <Footer/>
-                    </Route>
-                    <Route path="/posts">
-                        <Posts></Posts>
                     </Route>
                     <Route path="/projects/survivalz">
                         <SurvivalZ></SurvivalZ>

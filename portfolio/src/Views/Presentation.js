@@ -83,11 +83,14 @@ function Presentation() {
                             <FontAwesomeIcon className="mr-5" icon={faPaperPlane}/>
                             Me contacter
                         </Link>
-                        <a href={require("../Assets/CV_LI_Kevin.pdf")} target="_blank"
-                           className="bg-color-primary-2 cursor-pointer text-white font-bold py-2 px-5 rounded text-xl
-                           md:text-3xl
-                           lg:text-4xl
-                           xl:text-xl"
+                        <a
+                            href={require("../Assets/CV_LI_Kevin.pdf")}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-color-primary-2 cursor-pointer text-white font-bold py-2 px-5 rounded text-xl
+                            md:text-3xl
+                            lg:text-4xl
+                            xl:text-xl"
                         >
                             <FontAwesomeIcon className="mr-5" icon={faFileDownload}/>
                             Téléchargez mon CV

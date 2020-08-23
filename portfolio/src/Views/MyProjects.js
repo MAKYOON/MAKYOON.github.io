@@ -9,7 +9,7 @@ function MyProjects() {
     return (
         <section
             id="projects"
-            className="pt-24 bg-color-primary w-full min-h-screen relative pb-4
+            className="pt-24 bg-color-secondary w-full min-h-screen relative pb-4
             md:pt-40
             lg:pt-48
             xl:pt-32"

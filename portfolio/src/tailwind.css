@@ -14394,6 +14394,10 @@ video {
   transition-delay: 1000ms;
 }
 
+@import "~react-vertical-timeline-component/style.min.css";
+
+@import "~react-vertical-timeline-component/style.css";
+
 ::-webkit-scrollbar-button {
   display: none;
 }

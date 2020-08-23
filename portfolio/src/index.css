@@ -4,6 +4,9 @@
 
 @tailwind utilities;
 
+@import "~react-vertical-timeline-component/style.min.css";
+
+
 ::-webkit-scrollbar-button {
     display: none;
 }

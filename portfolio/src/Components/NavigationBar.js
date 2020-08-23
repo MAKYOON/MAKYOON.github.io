@@ -29,7 +29,7 @@ function NavigationBar() {
             setHidden(true);
         else
             setHidden(false);
-    } )
+    }, [size.width])
 
     if(hidden) {
 

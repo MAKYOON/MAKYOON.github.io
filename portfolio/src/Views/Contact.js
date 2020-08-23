@@ -42,7 +42,7 @@ function Contact() {
 
     return (
         <section id="contact"
-                 className="pt-24 w-full flex flex-col min-h-screen justify-around bg-color-secondary pb-4
+                 className="pt-24 w-full flex flex-col min-h-screen justify-around bg-color-primary pb-4
                  md:pt-40
                  lg:pt-48
                  xl:pt-32"
