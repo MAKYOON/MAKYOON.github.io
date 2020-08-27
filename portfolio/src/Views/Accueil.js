@@ -23,6 +23,15 @@ function Accueil() {
                 >
                     <p>PORTFOLIO</p>
                     <p>LI Kevin</p>
+                    <br/>
+                    <p
+                        className="text-2xl
+                        md:text-4xl
+                        lg:text-5xl
+                        xl:text-3xl"
+                    >
+                        Développeur Web
+                    </p>
                 </figcaption>
             </figure>
             <div

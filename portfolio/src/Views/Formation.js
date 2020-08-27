@@ -29,7 +29,6 @@ function Formation()
 			</h1>
 			<VerticalTimeline>
 				<VerticalTimelineElement
-					className="flex"
 					contentStyle={{ borderTop: '3px solid #5D001E'}}
 					contentArrowStyle={{ borderRight: '7px solid  #5D001E' }}
 					iconStyle={{ background: '#5D001E', color: '#fff' }}
@@ -41,15 +40,18 @@ function Formation()
 					date="Sept 2020"
 				>
 					<div
-						className="m-auto"
+						className="m-auto flex justify-center h-8 mb-5
+						md:h-20
+						lg:h-24
+						xl:h-12"
 					>
 						<img src={require("../Assets/aircampus.png")}
 							 alt="AirCampus"
-							 className="w-2/5 inline mb-5 mr-8"
+							 className="w-2/5 mr-5"
 						/>
 						<img src={require("../Assets/unistra.png")}
 							 alt="Université de Strasbourg"
-							 className="w-2/5 inline mb-5 "
+							 className="w-2/5"
 						/>
 					</div>
 					<h3
@@ -68,6 +70,7 @@ function Formation()
 					</h4>
 					<p>
 						Alternance au sein de l'entreprise AirCampus
+						Développeur Fullstack JavaScript : React, React Native & NodeJS
 					</p>
 
 				</VerticalTimelineElement>
@@ -118,15 +121,18 @@ function Formation()
 					date="2016-2018"
 				>
 					<div
-						className="m-auto"
+						className="m-auto flex justify-center h-24 mb-5
+						md:h-40
+						lg:h-64
+						xl:h-32"
 					>
 						<img src={require("../Assets/amandecannelle.jpg")}
 							 alt="Amande & Cannelle"
-							 className="w-2/5 inline mb-5 mr-8"
+							 className="w-2/5 mr-5"
 						/>
 						<img src={require("../Assets/cfaeschau.png")}
 							 alt="CFA Eschau"
-							 className="w-2/5 inline mb-5 "
+							 className="w-2/5 "
 						/>
 					</div>
 					<h3

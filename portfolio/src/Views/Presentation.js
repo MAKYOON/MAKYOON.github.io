@@ -19,13 +19,12 @@ function Presentation() {
             <Slide triggerOnce>
                 <div
                     className="flex flex-col items-center justify-around w-full min-h-screen
-                    xl:grid xl:grid-cols-3 xl:grid-rows-3
                     "
                 >
-                    <h1 className="text-3xl text-center p-3 section-title
+                    <h1 className="text-3xl text-center p-3 section-title mb-5
                     md:text-5xl md:p-5
                     lg:text-6xl lg:p-8
-                    xl:text-4xl xl:p-3 xl:col-span-2"
+                    xl:text-4xl xl:p-3 "
                     >
                         <FontAwesomeIcon
                             icon={faUserCircle}
@@ -33,7 +32,8 @@ function Presentation() {
                         />
                         PRESENTATION </h1>
                     <div
-                        className="xl:row-start-1 xl:row-span-3 xl:m-auto "
+                        className="flex flex-col items-center
+                        xl:flex-row xl:justify-around"
                     >
                         <img
                             className="rounded-full h-32 w-32 mb-12
@@ -43,30 +43,30 @@ function Presentation() {
                             src={require("../Assets/photo.jpg")}
                             alt="Profil"
                         />
-                    </div>
-                    <div
-                        className="pl-3
-                        md:text-2xl md:pl-5
-                        lg:text-3xl
-                        xl:text-xl xl:m-auto xl:col-span-2 xl:pr-3"
-                    >
-                        <p>
-                            Je m'appelle <strong className="color-primary-3"> LI Kevin </strong>, j'ai 22 ans et je suis un étudiant à Strasbourg.
-                            Diplômé d'un <strong className="color-primary-3"> Foundation Degree Jeux Vidéo et Serious Games </strong>, j'ai décidé
-                            de continuer mes études dans le domaine du développement web. Ainsi, je prépare actuellement
-                            une <strong className="color-primary-3"> Licence Pro : Développement Web, Communication et Apprentissages </strong> à
-                            la Faculté de Strasbourg, en alternance au sein de la startup <strong className="color-primary-3">AirCampus </strong>.
-                        </p>
-                        <br/>
-                        <p>
-                            Ce portfolio retrace les différentes étapes de ma formation et recense ainsi les différents
-                            projets sur lesquels j'ai pu travailler. Si vous avez des questions, n'hésitez pas à me contacter !
-                        </p>
+                        <div
+                            className="w-11/12
+                            md:text-2xl
+                            lg:text-3xl
+                            xl:text-xl xl:w-3/5"
+                        >
+                            <p>
+                                Je m'appelle <strong className="color-primary-3"> LI Kevin </strong>, j'ai 22 ans et je suis un étudiant à Strasbourg.
+                                Diplômé d'un <strong className="color-primary-3"> Foundation Degree Jeux Vidéo et Serious Games </strong>, j'ai décidé
+                                de continuer mes études dans le domaine du développement web. Ainsi, je prépare actuellement
+                                une <strong className="color-primary-3"> Licence Pro : Développement Web, Communication et Apprentissages </strong> à
+                                la Faculté de Strasbourg, en alternance au sein de la startup <strong className="color-primary-3">AirCampus </strong>.
+                            </p>
+                            <br/>
+                            <p>
+                                Ce portfolio retrace les différentes étapes de ma formation et recense ainsi les différents
+                                projets sur lesquels j'ai pu travailler. Si vous avez des questions, n'hésitez pas à me contacter !
+                            </p>
+                        </div>
                     </div>
                     <div
                         className="flex flex-col space-y-5 w-4/5 text-center
                         md:w-3/5
-                        xl:w-2/5 xl:m-auto xl:col-span-2"
+                        xl:w-2/5 "
                     >
                         <Link
                             className="bg-color-primary-2 cursor-pointer text-white font-bold py-2 px-5 rounded text-xl
