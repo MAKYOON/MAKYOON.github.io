@@ -70,7 +70,7 @@ function Formation()
 					</h4>
 					<p>
 						Alternance au sein de l'entreprise AirCampus
-						Développeur Fullstack JavaScript : React, React Native & NodeJS
+						Développeur Fullstack JavaScript : React (NextJS) , React Native & NodeJS
 					</p>
 
 				</VerticalTimelineElement>
